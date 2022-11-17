@@ -1,0 +1,1 @@
+# Sistema-IoT-flexible-Para-el-monitoreo-de-variables-ambientales-en-aplicaciones-agroindustriales
