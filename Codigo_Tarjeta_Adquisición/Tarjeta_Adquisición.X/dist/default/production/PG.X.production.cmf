@@ -1,0 +1,1929 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\PG.X.production.o
+cinit CODE 0 25B 25B 42 2 1
+idloc IDLOC 5 8000 8000 4 2 1
+text1 CODE 0 C44 C44 DD 2 1
+text2 CODE 0 D21 D21 DE 2 1
+text3 CODE 0 7EF 7EF 7 2 1
+text4 CODE 0 159C 159C 30 2 1
+text5 CODE 0 1462 1462 18 2 1
+text6 CODE 0 EE5 EE5 11B 2 1
+text7 CODE 0 14AF 14AF 20 2 1
+text8 CODE 0 86D 86D 59 2 1
+text9 CODE 0 8C6 8C6 62 2 1
+text10 CODE 0 1519 1519 2A 2 1
+text11 CODE 0 163D 163D 3F 2 1
+text12 CODE 0 147A 147A 19 2 1
+text13 CODE 0 DFF DFF E6 2 1
+text14 CODE 0 14F4 14F4 25 2 1
+text15 CODE 0 1493 1493 1C 2 1
+text16 CODE 0 A1D A1D A3 2 1
+text17 CODE 0 B79 B79 CB 2 1
+text18 CODE 0 15CC 15CC 35 2 1
+text19 CODE 0 14CF 14CF 25 2 1
+text20 CODE 0 816 816 57 2 1
+text21 CODE 0 3 3 1 2 1
+text22 CODE 0 928 928 71 2 1
+text23 CODE 0 76B 76B 84 2 1
+text24 CODE 0 1757 1757 54 2 1
+text25 CODE 0 167C 167C 41 2 1
+text26 CODE 0 1703 1703 54 2 1
+text27 CODE 0 17AB 17AB 55 2 1
+text29 CODE 0 1601 1601 3C 2 1
+text30 CODE 0 16BD 16BD 46 2 1
+text31 CODE 0 999 999 84 2 1
+text32 CODE 0 AC0 AC0 B9 2 1
+text33 CODE 0 156E 156E 2E 2 1
+maintext CODE 0 29D 29D 4CE 2 1
+cstackCOMMON COMMON 1 70 70 C 1 1
+cstackBANK0 BANK0 1 20 20 4F 1 1
+cstackBANK1 BANK1 1 CD CD 1F 1 1
+inittext CODE 0 7F6 7F6 6 2 1
+stringtext1 STRCODE 0 1800 1800 3 2 1
+intentry CODE 0 4 4 255 2 1
+bssBANK1 BANK1 1 A0 A0 2D 1 1
+bssBANK2 BANK2 1 14B 14B 25 1 1
+bssBANK3 BANK3 1 1A0 1A0 20 1 1
+idataBANK1 CODE 0 7FC 7FC 4 2 1
+idataBANK2 CODE 0 1543 1543 2B 2 1
+idataBANK3 CODE 0 144B 144B 17 2 1
+dataBANK1 BANK1 1 EC EC 4 1 1
+dataBANK2 BANK2 1 120 120 2B 1 1
+dataBANK3 BANK3 1 1C0 1C0 17 1 1
+clrtext CODE 0 810 810 6 2 1
+bssCOMMON COMMON 1 7C 7C 2 1 1
+config CONFIG 4 8007 8007 2 2 1
+$C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+idloc IDLOC 5 8000 8000 4 2 1
+reset_vec CODE 0 0 0 2 2 1
+end_init CODE 0 259 259 2 2 1
+config CONFIG 4 8007 8007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 6F-6F 1
+RAM 1D7-1EF 1
+RAM 220-26F 1
+RAM 2A0-2EF 1
+RAM 320-32F 1
+BANK0 6F-6F 1
+BANK3 1D7-1EF 1
+BANK4 220-26F 1
+BANK5 2A0-2EF 1
+BANK6 320-32F 1
+CONST 2-2 2
+CONST 800-80F 2
+CONST 1000-144A 2
+CONST 1803-1FFF 2
+ENTRY 2-2 2
+ENTRY 800-80F 2
+ENTRY 1000-144A 2
+ENTRY 1803-1FFF 2
+SFR10 500-56F 1
+SFR11 580-5EF 1
+SFR12 600-66F 1
+SFR13 680-6EF 1
+SFR14 700-76F 1
+SFR15 780-7EF 1
+SFR16 800-86F 1
+SFR17 880-8EF 1
+SFR18 900-96F 1
+SFR19 980-9EF 1
+SFR20 A00-A6F 1
+SFR21 A80-AEF 1
+SFR22 B00-B6F 1
+SFR23 B80-BEF 1
+SFR24 C00-C6F 1
+SFR25 C80-CEF 1
+SFR26 D00-D6F 1
+SFR27 D80-DEF 1
+SFR28 E00-E6F 1
+SFR29 E80-EEF 1
+SFR30 F00-F6F 1
+SFR31 F80-FEF 1
+CODE 2-2 2
+CODE 800-80F 2
+CODE 1000-144A 2
+CODE 1803-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-11F 1
+SFR3 180-19F 1
+SFR4 200-21F 1
+SFR5 280-29F 1
+SFR6 300-31F 1
+SFR7 380-3EF 1
+SFR8 400-46F 1
+SFR9 480-4EF 1
+BIGRAM 2000-21EF 1
+EEDATA F000-F0FF 2
+STRCODE 2-2 2
+STRCODE 800-80F 2
+STRCODE 1000-144A 2
+STRCODE 1803-1FFF 2
+STRING 2-2 2
+STRING 800-80F 2
+STRING 1000-144A 2
+STRING 1803-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\PG.X.production.o
+25B cinit CODE >2103:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+25B cinit CODE >2106:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+25B cinit CODE >2302:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+25C cinit CODE >2303:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+25D cinit CODE >2304:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+25E cinit CODE >2305:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+25F cinit CODE >2306:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+260 cinit CODE >2307:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+261 cinit CODE >2308:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+262 cinit CODE >2309:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+263 cinit CODE >2310:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+264 cinit CODE >2311:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+267 cinit CODE >2315:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+268 cinit CODE >2316:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+269 cinit CODE >2317:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+26A cinit CODE >2318:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+26B cinit CODE >2319:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+26C cinit CODE >2320:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+26D cinit CODE >2321:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+26E cinit CODE >2322:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+26F cinit CODE >2323:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+270 cinit CODE >2324:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+273 cinit CODE >2328:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+274 cinit CODE >2329:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+275 cinit CODE >2330:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+276 cinit CODE >2331:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+277 cinit CODE >2332:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+278 cinit CODE >2333:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+279 cinit CODE >2334:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+27A cinit CODE >2335:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+27B cinit CODE >2336:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+27C cinit CODE >2337:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+27F cinit CODE >2354:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+280 cinit CODE >2355:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+281 cinit CODE >2359:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+282 cinit CODE >2360:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+283 cinit CODE >2361:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+284 cinit CODE >2362:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+285 cinit CODE >2363:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+286 cinit CODE >2364:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+289 cinit CODE >2368:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+28A cinit CODE >2369:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+28B cinit CODE >2370:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+28C cinit CODE >2371:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+28D cinit CODE >2372:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+28E cinit CODE >2373:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+291 cinit CODE >2377:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+292 cinit CODE >2378:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+293 cinit CODE >2379:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+294 cinit CODE >2380:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+295 cinit CODE >2381:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+296 cinit CODE >2382:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+299 cinit CODE >2388:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+299 cinit CODE >2390:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+29A cinit CODE >2391:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+29B cinit CODE >2392:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+4 intentry CODE >730:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6 intentry CODE >736:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C intentry CODE >739:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F intentry CODE >740:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1A intentry CODE >741:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+26 intentry CODE >742:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+30 intentry CODE >743:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3D intentry CODE >744:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+46 intentry CODE >745:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4F intentry CODE >746:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+58 intentry CODE >747:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+61 intentry CODE >748:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6A intentry CODE >749:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+73 intentry CODE >750:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+7C intentry CODE >751:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+85 intentry CODE >752:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+8E intentry CODE >753:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+98 intentry CODE >758:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9A intentry CODE >758:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9E intentry CODE >759:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A5 intentry CODE >760:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AA intentry CODE >761:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AB intentry CODE >762:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AE intentry CODE >766:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B5 intentry CODE >767:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B8 intentry CODE >769:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B9 intentry CODE >771:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+BA intentry CODE >773:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C1 intentry CODE >774:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C4 intentry CODE >775:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C6 intentry CODE >776:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C7 intentry CODE >777:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C8 intentry CODE >778:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C9 intentry CODE >780:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CF intentry CODE >780:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D4 intentry CODE >780:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D7 intentry CODE >780:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DA intentry CODE >780:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DD intentry CODE >780:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+E0 intentry CODE >782:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+E0 intentry CODE >784:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EB intentry CODE >814:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EE intentry CODE >815:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F1 intentry CODE >816:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F2 intentry CODE >818:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FB intentry CODE >819:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FC intentry CODE >821:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+101 intentry CODE >822:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+10A intentry CODE >823:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+111 intentry CODE >824:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+11A intentry CODE >825:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+121 intentry CODE >826:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+12A intentry CODE >827:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+131 intentry CODE >828:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+13A intentry CODE >829:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+141 intentry CODE >830:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+14B intentry CODE >831:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+14C intentry CODE >834:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+14F intentry CODE >835:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+152 intentry CODE >836:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+153 intentry CODE >838:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+156 intentry CODE >839:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+159 intentry CODE >840:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+15A intentry CODE >842:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+15D intentry CODE >843:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+15F intentry CODE >844:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+160 intentry CODE >845:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+161 intentry CODE >847:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+166 intentry CODE >847:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16B intentry CODE >847:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16E intentry CODE >847:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+171 intentry CODE >847:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+174 intentry CODE >847:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+177 intentry CODE >847:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+17A intentry CODE >847:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+17D intentry CODE >848:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+17D intentry CODE >849:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+182 intentry CODE >850:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+189 intentry CODE >854:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+192 intentry CODE >855:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+193 intentry CODE >857:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+19B intentry CODE >858:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+19C intentry CODE >860:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1A1 intentry CODE >860:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1A6 intentry CODE >860:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1A9 intentry CODE >860:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1AC intentry CODE >861:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1B7 intentry CODE >862:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1BB intentry CODE >863:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1BD intentry CODE >864:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1BE intentry CODE >865:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1C9 intentry CODE >866:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1CA intentry CODE >867:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1CB intentry CODE >868:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1CD intentry CODE >871:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1D4 intentry CODE >875:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1DD intentry CODE >876:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1DE intentry CODE >878:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1E6 intentry CODE >879:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1E7 intentry CODE >881:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1EF intentry CODE >882:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1F0 intentry CODE >884:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1F8 intentry CODE >885:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1F9 intentry CODE >887:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+201 intentry CODE >888:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+202 intentry CODE >890:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+20A intentry CODE >891:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+20B intentry CODE >894:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+210 intentry CODE >894:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+215 intentry CODE >894:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+218 intentry CODE >894:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+21B intentry CODE >894:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+21E intentry CODE >894:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+221 intentry CODE >894:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+224 intentry CODE >894:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+227 intentry CODE >895:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+22D intentry CODE >896:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+231 intentry CODE >897:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+233 intentry CODE >898:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+234 intentry CODE >899:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+23A intentry CODE >900:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+23B intentry CODE >901:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+23C intentry CODE >902:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+241 intentry CODE >903:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+243 intentry CODE >904:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+244 intentry CODE >907:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+246 intentry CODE >909:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+24C intentry CODE >909:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+250 intentry CODE >910:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+253 intentry CODE >911:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+255 intentry CODE >912:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+256 intentry CODE >913:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+257 intentry CODE >915:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+156E text33 CODE >714:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+156E text33 CODE >716:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1573 text33 CODE >718:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+157F text33 CODE >719:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1583 text33 CODE >720:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1584 text33 CODE >721:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+158B text33 CODE >721:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1590 text33 CODE >724:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1592 text33 CODE >724:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1596 text33 CODE >725:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1597 text33 CODE >726:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+159B text33 CODE >728:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AC0 text32 CODE >268:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AC1 text32 CODE >270:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AC2 text32 CODE >272:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AC5 text32 CODE >273:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AC8 text32 CODE >274:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AC9 text32 CODE >276:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ACC text32 CODE >277:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ACF text32 CODE >278:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AD0 text32 CODE >279:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AD0 text32 CODE >280:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AD2 text32 CODE >281:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AD5 text32 CODE >282:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AD6 text32 CODE >284:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ADA text32 CODE >285:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ADD text32 CODE >286:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ADE text32 CODE >288:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AE0 text32 CODE >289:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AE2 text32 CODE >290:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AE3 text32 CODE >292:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AF5 text32 CODE >293:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AF8 text32 CODE >294:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AFA text32 CODE >295:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AFB text32 CODE >296:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AFC text32 CODE >298:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+AFE text32 CODE >299:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B00 text32 CODE >300:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B01 text32 CODE >302:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B20 text32 CODE >303:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B23 text32 CODE >304:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B25 text32 CODE >305:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B26 text32 CODE >306:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B27 text32 CODE >308:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B3C text32 CODE >309:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B3F text32 CODE >310:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B41 text32 CODE >311:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B42 text32 CODE >312:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B43 text32 CODE >314:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B45 text32 CODE >315:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B47 text32 CODE >316:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B48 text32 CODE >319:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B49 text32 CODE >320:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B4B text32 CODE >321:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B4C text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B52 text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B57 text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B5A text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B5D text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B60 text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B63 text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B66 text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B69 text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B6C text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B6F text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B72 text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B75 text32 CODE >322:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+B78 text32 CODE >323:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+999 text31 CODE >217:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+99A text31 CODE >219:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+99B text31 CODE >221:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+99E text31 CODE >222:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9A1 text31 CODE >223:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9A2 text31 CODE >225:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9A5 text31 CODE >226:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9A8 text31 CODE >227:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9A9 text31 CODE >228:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9A9 text31 CODE >229:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9AB text31 CODE >230:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9AE text31 CODE >231:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9AF text31 CODE >233:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9B3 text31 CODE >234:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9B6 text31 CODE >235:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9B7 text31 CODE >237:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9B9 text31 CODE >238:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9BB text31 CODE >239:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9BC text31 CODE >241:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9C7 text31 CODE >242:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9CA text31 CODE >243:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9CC text31 CODE >244:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9CD text31 CODE >245:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9CE text31 CODE >247:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9D0 text31 CODE >248:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9D2 text31 CODE >249:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9D3 text31 CODE >251:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9E2 text31 CODE >252:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9E5 text31 CODE >253:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9E7 text31 CODE >254:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9E8 text31 CODE >255:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9E9 text31 CODE >257:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9EB text31 CODE >258:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9ED text31 CODE >259:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9EE text31 CODE >261:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9EF text31 CODE >262:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9F0 text31 CODE >263:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9F2 text31 CODE >264:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9F3 text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9F9 text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+9FE text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A01 text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A04 text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A07 text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A0A text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A0D text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A10 text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A13 text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A16 text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A19 text31 CODE >265:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+A1C text31 CODE >266:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16BD text30 CODE >155:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16BE text30 CODE >157:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16BF text30 CODE >159:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16C2 text30 CODE >160:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16C5 text30 CODE >161:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16C6 text30 CODE >163:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16C9 text30 CODE >164:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16CC text30 CODE >165:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16CD text30 CODE >167:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16D0 text30 CODE >168:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16D3 text30 CODE >169:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16D4 text30 CODE >171:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16D7 text30 CODE >172:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16DA text30 CODE >173:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16DB text30 CODE >175:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16DD text30 CODE >176:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16DF text30 CODE >177:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16E0 text30 CODE >179:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16E1 text30 CODE >180:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16E2 text30 CODE >181:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16E4 text30 CODE >182:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16E5 text30 CODE >184:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16EB text30 CODE >184:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16F0 text30 CODE >184:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16F3 text30 CODE >184:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16F6 text30 CODE >184:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16F9 text30 CODE >184:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16FC text30 CODE >184:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+16FF text30 CODE >184:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1702 text30 CODE >185:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1601 text29 CODE >189:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1602 text29 CODE >191:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1603 text29 CODE >193:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1606 text29 CODE >194:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1609 text29 CODE >195:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+160A text29 CODE >197:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+160D text29 CODE >198:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1610 text29 CODE >199:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1611 text29 CODE >201:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1614 text29 CODE >202:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1617 text29 CODE >203:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1618 text29 CODE >205:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+161A text29 CODE >206:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+161C text29 CODE >207:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+161D text29 CODE >209:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+161E text29 CODE >210:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+161F text29 CODE >211:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1621 text29 CODE >212:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1622 text29 CODE >214:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1628 text29 CODE >214:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+162D text29 CODE >214:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1630 text29 CODE >214:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1633 text29 CODE >214:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1636 text29 CODE >214:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1639 text29 CODE >214:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+163C text29 CODE >215:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+17AB text27 CODE >29:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17AD text27 CODE >31:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17AE text27 CODE >32:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17AF text27 CODE >33:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17B0 text27 CODE >34:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17B5 text27 CODE >35:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17C0 text27 CODE >36:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17C5 text27 CODE >37:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17C7 text27 CODE >39:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17C8 text27 CODE >40:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17D3 text27 CODE >41:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17D9 text27 CODE >43:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17D9 text27 CODE >44:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17DA text27 CODE >45:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17DC text27 CODE >49:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17E7 text27 CODE >50:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17ED text27 CODE >53:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17EE text27 CODE >54:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17F9 text27 CODE >55:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17FF text27 CODE >63:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1703 text26 CODE >64:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1705 text26 CODE >65:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1706 text26 CODE >66:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+170B text26 CODE >67:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+170D text26 CODE >69:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1712 text26 CODE >70:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1718 text26 CODE >71:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1719 text26 CODE >72:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+171A text26 CODE >73:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1720 text26 CODE >74:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1721 text26 CODE >75:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1723 text26 CODE >75:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1727 text26 CODE >76:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1735 text26 CODE >78:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+173B text26 CODE >79:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+173C text26 CODE >80:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+173D text26 CODE >81:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1743 text26 CODE >82:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1744 text26 CODE >83:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1746 text26 CODE >83:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+174B text26 CODE >85:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+174B text26 CODE >86:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1751 text26 CODE >86:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1755 text26 CODE >87:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1755 text26 CODE >88:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1756 text26 CODE >89:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+167C text25 CODE >13:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+167E text25 CODE >15:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1683 text25 CODE >16:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1688 text25 CODE >17:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+168D text25 CODE >18:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1696 text25 CODE >19:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+169C text25 CODE >20:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+169F text25 CODE >21:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+16A0 text25 CODE >22:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+16A5 text25 CODE >23:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+16AA text25 CODE >24:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+16B3 text25 CODE >25:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+16B9 text25 CODE >26:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+16BC text25 CODE >28:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1757 text24 CODE >90:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1759 text24 CODE >93:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+175F text24 CODE >94:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+176A text24 CODE >95:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+176F text24 CODE >97:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1770 text24 CODE >98:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1771 text24 CODE >101:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+177D text24 CODE >102:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1789 text24 CODE >103:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+1796 text24 CODE >104:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17A3 text24 CODE >105:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+17AA text24 CODE >107:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+76B text23 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+76B text23 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+776 text23 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+77E text23 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+782 text23 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+784 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+785 text23 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+78D text23 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+791 text23 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+795 text23 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+79D text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+79F text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7A3 text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7A7 text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7AB text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7AF text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7B3 text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7B7 text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7BB text23 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7BF text23 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7CF text23 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7D0 text23 CODE >28:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7D8 text23 CODE >29:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7DE text23 CODE >30:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7DE text23 CODE >31:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+7EE text23 CODE >32:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+928 text22 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+928 text22 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+931 text22 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+935 text22 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+937 text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+938 text22 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+940 text22 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+944 text22 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+948 text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+94A text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+94E text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+952 text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+956 text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+95A text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+95E text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+962 text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+966 text22 CODE >21:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+96A text22 CODE >22:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+97A text22 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+982 text22 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+988 text22 CODE >25:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+988 text22 CODE >26:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+998 text22 CODE >27:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+3 text21 CODE >7:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+3 text21 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+816 text20 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+816 text20 CODE >12:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+821 text20 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+825 text20 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+826 text20 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+846 text20 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+84A text20 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+84E text20 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+863 text20 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+86A text20 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+86C text20 CODE >24:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+14CF text19 CODE >8:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+14D1 text19 CODE >13:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+14D3 text19 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+14D4 text19 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+14E0 text19 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+14E5 text19 CODE >14:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+14F3 text19 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+15CC text18 CODE >133:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+15CE text18 CODE >145:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+15D9 text18 CODE >146:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+15DB text18 CODE >147:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+15DC text18 CODE >148:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+15E6 text18 CODE >149:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+15EB text18 CODE >147:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+15F1 text18 CODE >147:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+15F5 text18 CODE >147:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+15F9 text18 CODE >156:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1600 text18 CODE >164:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+B79 text17 CODE >894:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+B7B text17 CODE >905:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+B82 text17 CODE >905:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+B87 text17 CODE >905:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+B99 text17 CODE >906:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BA1 text17 CODE >909:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BB1 text17 CODE >910:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BB5 text17 CODE >911:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BB7 text17 CODE >912:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BB8 text17 CODE >917:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BBD text17 CODE >918:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BE2 text17 CODE >919:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BE6 text17 CODE >920:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+BEA text17 CODE >921:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+C17 text17 CODE >912:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+C26 text17 CODE >912:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+C2F text17 CODE >912:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+C33 text17 CODE >912:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+C37 text17 CODE >925:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+C43 text17 CODE >926:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A1D text16 CODE >1007:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A1F text16 CODE >1019:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A30 text16 CODE >1020:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A36 text16 CODE >1020:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A38 text16 CODE >1022:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A3B text16 CODE >1022:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A41 text16 CODE >1023:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A45 text16 CODE >1117:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A4D text16 CODE >1239:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A57 text16 CODE >1295:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A69 text16 CODE >1297:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A76 text16 CODE >1298:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A77 text16 CODE >1305:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A8C text16 CODE >1316:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A95 text16 CODE >1316:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A9A text16 CODE >1316:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+A9D text16 CODE >1509:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+AA4 text16 CODE >1509:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+AA7 text16 CODE >1514:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+ABF text16 CODE >1517:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1493 text15 CODE >1520:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1495 text15 CODE >1525:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+1499 text15 CODE >1529:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+149A text15 CODE >1533:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+14A2 text15 CODE >1529:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+14AC text15 CODE >1538:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+14AE text15 CODE >1543:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+14F4 text14 CODE >9:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+14F4 text14 CODE >15:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+14F7 text14 CODE >16:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+14FB text14 CODE >17:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+14FD text14 CODE >18:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+14FF text14 CODE >19:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+150C text14 CODE >20:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+1518 text14 CODE >23:C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+DFF text13 CODE >71:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+E01 text13 CODE >74:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+E19 text13 CODE >75:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+E37 text13 CODE >76:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+E57 text13 CODE >77:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+E6B text13 CODE >78:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+E7F text13 CODE >79:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+E82 text13 CODE >80:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+E94 text13 CODE >81:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EA3 text13 CODE >82:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EAD text13 CODE >82:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EB2 text13 CODE >82:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EB6 text13 CODE >83:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EBA text13 CODE >84:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EBE text13 CODE >85:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EC2 text13 CODE >86:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EC6 text13 CODE >87:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ECA text13 CODE >88:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ECE text13 CODE >89:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ED2 text13 CODE >90:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ED6 text13 CODE >91:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ED8 text13 CODE >92:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+ED9 text13 CODE >93:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EDA text13 CODE >94:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EDB text13 CODE >95:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EDD text13 CODE >96:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EDE text13 CODE >97:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EDF text13 CODE >98:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EE0 text13 CODE >99:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EE3 text13 CODE >100:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EE4 text13 CODE >101:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+147A text12 CODE >60:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+147A text12 CODE >62:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+147A text12 CODE >64:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1483 text12 CODE >66:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+148D text12 CODE >67:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1490 text12 CODE >69:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1491 text12 CODE >71:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1492 text12 CODE >72:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+163D text11 CODE >152:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+163D text11 CODE >156:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1646 text11 CODE >157:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+164E text11 CODE >158:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1651 text11 CODE >159:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+165A text11 CODE >160:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1662 text11 CODE >161:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1665 text11 CODE >163:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1675 text11 CODE >165:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1679 text11 CODE >166:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+167B text11 CODE >167:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1519 text10 CODE >197:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1519 text10 CODE >199:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+151B text10 CODE >201:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+151C text10 CODE >204:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+151E text10 CODE >205:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1530 text10 CODE >205:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1534 text10 CODE >206:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1536 text10 CODE >207:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+153D text10 CODE >207:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1541 text10 CODE >208:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+1542 text10 CODE >209:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8C6 text9 CODE >82:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8C6 text9 CODE >87:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8CF text9 CODE >88:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8D7 text9 CODE >90:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8DF text9 CODE >91:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8E7 text9 CODE >93:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8F0 text9 CODE >94:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8F8 text9 CODE >96:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8FC text9 CODE >98:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+90A text9 CODE >100:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+910 text9 CODE >101:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+916 text9 CODE >103:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+91F text9 CODE >104:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+927 text9 CODE >107:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+86D text8 CODE >118:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+86F text8 CODE >120:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+874 text8 CODE >123:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+87C text8 CODE >124:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+884 text8 CODE >125:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+887 text8 CODE >126:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+890 text8 CODE >127:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+898 text8 CODE >128:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+89C text8 CODE >129:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+89D text8 CODE >133:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8A5 text8 CODE >134:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8AD text8 CODE >135:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8B0 text8 CODE >136:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8B9 text8 CODE >137:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8C1 text8 CODE >138:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+8C5 text8 CODE >140:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+14AF text7 CODE >177:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+14B1 text7 CODE >181:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+14B2 text7 CODE >183:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+14C1 text7 CODE >184:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+14C4 text7 CODE >185:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+14CA text7 CODE >185:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+14CE text7 CODE >186:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+EE5 text6 CODE >103:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EE5 text6 CODE >104:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+EF9 text6 CODE >106:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F0A text6 CODE >107:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F1B text6 CODE >109:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F28 text6 CODE >111:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F3C text6 CODE >113:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F4D text6 CODE >114:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F5E text6 CODE >116:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F61 text6 CODE >117:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+F7F text6 CODE >119:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FA0 text6 CODE >120:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FB4 text6 CODE >121:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FC4 text6 CODE >122:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FC7 text6 CODE >123:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FE2 text6 CODE >123:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FE6 text6 CODE >123:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FEA text6 CODE >124:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FEE text6 CODE >125:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FF1 text6 CODE >126:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FF3 text6 CODE >127:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FF5 text6 CODE >128:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FF7 text6 CODE >129:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FF8 text6 CODE >130:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FF9 text6 CODE >131:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FFA text6 CODE >132:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FFB text6 CODE >133:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FFE text6 CODE >134:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+FFF text6 CODE >135:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+1462 text5 CODE >14:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1462 text5 CODE >19:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1464 text5 CODE >20:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1465 text5 CODE >21:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1466 text5 CODE >25:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1469 text5 CODE >26:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+146B text5 CODE >27:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+146D text5 CODE >31:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+146F text5 CODE >32:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1470 text5 CODE >36:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1472 text5 CODE >37:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1473 text5 CODE >41:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1475 text5 CODE >43:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1477 text5 CODE >44:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1478 text5 CODE >45:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+1479 text5 CODE >46:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+159C text4 CODE >47:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+159C text4 CODE >49:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+159F text4 CODE >50:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15A0 text4 CODE >51:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15A2 text4 CODE >53:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15A4 text4 CODE >57:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15A7 text4 CODE >58:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15A9 text4 CODE >60:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15AB text4 CODE >62:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15AD text4 CODE >63:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15AF text4 CODE >65:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15B2 text4 CODE >67:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15B4 text4 CODE >68:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15B6 text4 CODE >71:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15B8 text4 CODE >72:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15BA text4 CODE >73:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15BB text4 CODE >74:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15BD text4 CODE >75:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15BE text4 CODE >76:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15C7 text4 CODE >78:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15C9 text4 CODE >79:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+15CB text4 CODE >82:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+7EF text3 CODE >83:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+7EF text3 CODE >85:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+7F2 text3 CODE >86:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+7F5 text3 CODE >87:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+D21 text2 CODE >325:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D23 text2 CODE >326:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D28 text2 CODE >327:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D34 text2 CODE >328:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D36 text2 CODE >329:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D38 text2 CODE >330:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D3A text2 CODE >332:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D44 text2 CODE >333:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D53 text2 CODE >334:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D56 text2 CODE >335:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D72 text2 CODE >335:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D77 text2 CODE >335:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D7B text2 CODE >336:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D7F text2 CODE >337:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D82 text2 CODE >338:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D84 text2 CODE >339:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D86 text2 CODE >340:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D88 text2 CODE >341:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D8A text2 CODE >342:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D8B text2 CODE >343:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D8C text2 CODE >344:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D8D text2 CODE >345:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D8E text2 CODE >346:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D8F text2 CODE >347:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D92 text2 CODE >348:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D93 text2 CODE >349:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D94 text2 CODE >350:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D95 text2 CODE >351:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DA0 text2 CODE >352:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DBB text2 CODE >353:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DBE text2 CODE >354:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DDA text2 CODE >354:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DDF text2 CODE >354:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DE3 text2 CODE >355:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DE7 text2 CODE >356:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DEA text2 CODE >357:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DEC text2 CODE >358:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DEE text2 CODE >359:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DF0 text2 CODE >360:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DF2 text2 CODE >361:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DF4 text2 CODE >362:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DF6 text2 CODE >363:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DF8 text2 CODE >364:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DFB text2 CODE >365:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DFC text2 CODE >366:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DFD text2 CODE >367:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+DFE text2 CODE >369:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C44 text1 CODE >371:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C46 text1 CODE >372:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C4B text1 CODE >372:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C4F text1 CODE >373:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C50 text1 CODE >374:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C51 text1 CODE >375:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C53 text1 CODE >376:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C54 text1 CODE >377:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C55 text1 CODE >378:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C56 text1 CODE >379:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C5B text1 CODE >381:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C61 text1 CODE >381:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C65 text1 CODE >382:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C66 text1 CODE >383:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C67 text1 CODE >384:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C69 text1 CODE >385:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C6A text1 CODE >386:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C6B text1 CODE >387:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C6C text1 CODE >388:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C71 text1 CODE >390:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C78 text1 CODE >390:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C7C text1 CODE >391:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C7D text1 CODE >392:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C7E text1 CODE >393:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C80 text1 CODE >394:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C81 text1 CODE >395:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C82 text1 CODE >396:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C83 text1 CODE >397:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C88 text1 CODE >399:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C8F text1 CODE >399:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C93 text1 CODE >400:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C94 text1 CODE >401:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C95 text1 CODE >402:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C97 text1 CODE >403:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C98 text1 CODE >404:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C99 text1 CODE >405:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C9A text1 CODE >406:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+C9F text1 CODE >408:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CA6 text1 CODE >408:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CAA text1 CODE >409:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CAB text1 CODE >410:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CAC text1 CODE >411:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CAE text1 CODE >412:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CAF text1 CODE >413:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CB0 text1 CODE >414:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CB1 text1 CODE >415:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CB6 text1 CODE >417:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CBD text1 CODE >417:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CC1 text1 CODE >418:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CC2 text1 CODE >419:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CC3 text1 CODE >420:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CC5 text1 CODE >421:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CC6 text1 CODE >422:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CC7 text1 CODE >423:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CC8 text1 CODE >424:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CCD text1 CODE >426:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CD4 text1 CODE >426:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CD8 text1 CODE >427:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CD9 text1 CODE >428:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CDA text1 CODE >429:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CDC text1 CODE >430:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CDD text1 CODE >431:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CDE text1 CODE >432:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CDF text1 CODE >433:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CE4 text1 CODE >435:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CEB text1 CODE >435:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CEF text1 CODE >436:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CF0 text1 CODE >437:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CF1 text1 CODE >438:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CF3 text1 CODE >439:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CF4 text1 CODE >440:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CF5 text1 CODE >441:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CF6 text1 CODE >442:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+CFB text1 CODE >444:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D02 text1 CODE >444:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D06 text1 CODE >445:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D07 text1 CODE >446:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D08 text1 CODE >447:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D0A text1 CODE >448:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D0B text1 CODE >449:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D0C text1 CODE >450:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D0D text1 CODE >451:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D12 text1 CODE >453:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D19 text1 CODE >453:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D1D text1 CODE >454:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D1E text1 CODE >455:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+D20 text1 CODE >457:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+29D maintext CODE >459:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+29D maintext CODE >460:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2A0 maintext CODE >461:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2A3 maintext CODE >462:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2A4 maintext CODE >463:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2BD maintext CODE >464:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2C4 maintext CODE >464:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2CC maintext CODE >465:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2D2 maintext CODE >465:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2D6 maintext CODE >466:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2DA maintext CODE >467:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2E6 maintext CODE >469:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2E6 maintext CODE >470:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2E7 maintext CODE >471:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2ED maintext CODE >472:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+2EE maintext CODE >473:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+329 maintext CODE >473:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+32D maintext CODE >474:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+331 maintext CODE >475:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+33D maintext CODE >476:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+33F maintext CODE >478:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+344 maintext CODE >480:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+345 maintext CODE >481:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+347 maintext CODE >482:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+348 maintext CODE >485:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+34C maintext CODE >501:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+351 maintext CODE >502:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+35C maintext CODE >503:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+365 maintext CODE >504:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+373 maintext CODE >505:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+378 maintext CODE >506:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+383 maintext CODE >507:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+396 maintext CODE >508:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+39B maintext CODE >509:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3A6 maintext CODE >510:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3A7 maintext CODE >511:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3A9 maintext CODE >512:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3AB maintext CODE >513:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3AD maintext CODE >514:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3AF maintext CODE >515:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3B3 maintext CODE >516:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3BE maintext CODE >517:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3BF maintext CODE >518:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3C1 maintext CODE >519:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3C3 maintext CODE >520:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3C5 maintext CODE >521:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3C7 maintext CODE >522:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3CB maintext CODE >524:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3CF maintext CODE >525:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3DA maintext CODE >526:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3E7 maintext CODE >527:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3EC maintext CODE >528:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+3F7 maintext CODE >529:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+40A maintext CODE >530:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+40F maintext CODE >531:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+41A maintext CODE >532:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+41B maintext CODE >533:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+41D maintext CODE >534:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+41F maintext CODE >535:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+421 maintext CODE >536:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+423 maintext CODE >537:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+427 maintext CODE >538:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+432 maintext CODE >539:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+433 maintext CODE >540:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+435 maintext CODE >541:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+437 maintext CODE >542:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+439 maintext CODE >543:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+43B maintext CODE >544:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+43F maintext CODE >546:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+443 maintext CODE >547:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+44E maintext CODE >548:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+45B maintext CODE >549:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+460 maintext CODE >550:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+46B maintext CODE >551:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+47E maintext CODE >552:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+483 maintext CODE >553:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+48E maintext CODE >554:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+48F maintext CODE >555:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+491 maintext CODE >556:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+493 maintext CODE >557:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+495 maintext CODE >558:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+497 maintext CODE >559:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+49B maintext CODE >560:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4A6 maintext CODE >561:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4A7 maintext CODE >562:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4A9 maintext CODE >563:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4AB maintext CODE >564:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4AD maintext CODE >565:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4AF maintext CODE >566:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4B3 maintext CODE >568:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4B7 maintext CODE >569:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4C2 maintext CODE >570:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4CF maintext CODE >571:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4D4 maintext CODE >572:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4DF maintext CODE >573:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4F2 maintext CODE >574:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+4F7 maintext CODE >575:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+502 maintext CODE >576:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+503 maintext CODE >577:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+505 maintext CODE >578:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+507 maintext CODE >579:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+509 maintext CODE >580:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+50B maintext CODE >581:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+50F maintext CODE >582:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+51A maintext CODE >583:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+51B maintext CODE >584:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+51D maintext CODE >585:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+51F maintext CODE >586:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+521 maintext CODE >587:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+523 maintext CODE >588:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+527 maintext CODE >590:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+52B maintext CODE >591:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+536 maintext CODE >592:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+543 maintext CODE >593:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+548 maintext CODE >594:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+553 maintext CODE >595:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+566 maintext CODE >596:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+56B maintext CODE >597:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+576 maintext CODE >598:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+577 maintext CODE >599:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+579 maintext CODE >600:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+57B maintext CODE >601:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+57D maintext CODE >602:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+57F maintext CODE >603:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+583 maintext CODE >604:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+58E maintext CODE >605:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+58F maintext CODE >606:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+591 maintext CODE >607:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+593 maintext CODE >608:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+595 maintext CODE >609:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+597 maintext CODE >610:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+59B maintext CODE >612:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+59F maintext CODE >613:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5AA maintext CODE >614:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5B8 maintext CODE >615:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5BD maintext CODE >616:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5C8 maintext CODE >617:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5DB maintext CODE >618:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5E0 maintext CODE >619:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5EB maintext CODE >620:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5EC maintext CODE >621:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5EE maintext CODE >622:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5F0 maintext CODE >623:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5F2 maintext CODE >624:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5F4 maintext CODE >625:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+5F8 maintext CODE >626:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+603 maintext CODE >627:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+604 maintext CODE >628:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+606 maintext CODE >629:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+608 maintext CODE >630:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+60A maintext CODE >631:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+60C maintext CODE >632:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+610 maintext CODE >634:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+614 maintext CODE >635:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+61F maintext CODE >636:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+62C maintext CODE >637:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+631 maintext CODE >638:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+63C maintext CODE >639:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+64F maintext CODE >640:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+654 maintext CODE >641:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+65F maintext CODE >642:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+660 maintext CODE >643:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+662 maintext CODE >644:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+664 maintext CODE >645:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+666 maintext CODE >646:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+668 maintext CODE >647:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+66C maintext CODE >648:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+677 maintext CODE >649:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+678 maintext CODE >650:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+67A maintext CODE >651:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+67C maintext CODE >652:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+67E maintext CODE >653:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+680 maintext CODE >654:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+684 maintext CODE >656:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+688 maintext CODE >657:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+693 maintext CODE >659:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6A0 maintext CODE >660:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6A5 maintext CODE >661:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6B0 maintext CODE >662:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6C3 maintext CODE >663:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6C8 maintext CODE >664:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6D3 maintext CODE >665:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6D4 maintext CODE >666:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6D6 maintext CODE >667:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6D8 maintext CODE >668:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6DA maintext CODE >669:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6DE maintext CODE >670:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6E9 maintext CODE >671:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6EA maintext CODE >672:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6EC maintext CODE >673:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6EE maintext CODE >674:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6F0 maintext CODE >675:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6F2 maintext CODE >676:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6F6 maintext CODE >678:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+6FA maintext CODE >679:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+705 maintext CODE >680:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+712 maintext CODE >681:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+717 maintext CODE >682:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+722 maintext CODE >683:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+735 maintext CODE >684:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+73A maintext CODE >685:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+745 maintext CODE >686:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+746 maintext CODE >687:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+748 maintext CODE >688:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+74A maintext CODE >689:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+74C maintext CODE >690:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+750 maintext CODE >691:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+75B maintext CODE >692:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+75C maintext CODE >693:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+75E maintext CODE >694:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+760 maintext CODE >695:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+762 maintext CODE >696:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+764 maintext CODE >697:C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+810 clrtext CODE >2343:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+810 clrtext CODE >2344:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+811 clrtext CODE >2345:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+811 clrtext CODE >2346:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+812 clrtext CODE >2347:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+813 clrtext CODE >2348:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+814 clrtext CODE >2349:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+815 clrtext CODE >2350:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+7F6 inittext CODE >2291:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+7F6 inittext CODE >2292:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+7F7 inittext CODE >2293:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+7F7 inittext CODE >2294:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+7F8 inittext CODE >2295:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+7F9 inittext CODE >2296:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+7FA inittext CODE >2297:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+7FB inittext CODE >2298:C:\Users\javie\AppData\Local\Temp\xcAs129g.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\PG.X.production.o
+__LdataBANK1 0 0 ABS 0 dataBANK1 -
+__LdataBANK2 0 0 ABS 0 dataBANK2 -
+__LdataBANK3 0 0 ABS 0 dataBANK3 -
+_VEML7700 132 0 BANK2 1 dataBANK2 dist/default/production\PG.X.production.o
+__Hspace_0 1803 0 ABS 0 - -
+__Hspace_1 1D7 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 10010 0 ABS 0 - -
+__HidataBANK1 0 0 ABS 0 idataBANK1 -
+__HidataBANK2 0 0 ABS 0 idataBANK2 -
+__HidataBANK3 0 0 ABS 0 idataBANK3 -
+__end_of_read_OW 2926 0 CODE 0 text12 dist/default/production\PG.X.production.o
+DHT22READ@check A8 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+DHT22READ@entry 27 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__end_of_OW_reset_pulse 1250 0 CODE 0 text9 dist/default/production\PG.X.production.o
+read_OW@PORT 22 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+read_OW@TRIS 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+_port_config 1888 0 CODE 0 text1 dist/default/production\PG.X.production.o
+_i2c_Read 1A42 0 CODE 0 text2 dist/default/production\PG.X.production.o
+_KG 153 0 BANK2 1 bssBANK2 dist/default/production\PG.X.production.o
+_cs BB 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+main@i EB 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+?_vfprintf 63 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_DHTS 1C0 0 BANK3 1 dataBANK3 dist/default/production\PG.X.production.o
+_LATA 10C 0 ABS 0 - dist/default/production\PG.X.production.o
+_LATB 10D 0 ABS 0 - dist/default/production\PG.X.production.o
+_LATC 10E 0 ABS 0 - dist/default/production\PG.X.production.o
+_RCIF 8D 0 ABS 0 - dist/default/production\PG.X.production.o
+_TMR2 1A 0 ABS 0 - dist/default/production\PG.X.production.o
+_TOUT BA 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+_TXIF 8C 0 ABS 0 - dist/default/production\PG.X.production.o
+_Temp A4 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+_WPUB 20D 0 ABS 0 - dist/default/production\PG.X.production.o
+_WPUE 210 0 ABS 0 - dist/default/production\PG.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+_dbuf 1A0 0 BANK3 1 bssBANK3 dist/default/production\PG.X.production.o
+_main 53A 0 CODE 0 maintext dist/default/production\PG.X.production.o
+_prec A0 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+_utoa 16F2 0 CODE 0 text17 dist/default/production\PG.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\PG.X.production.o
+pad@i 33 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+pad@p 30 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+pad@w 35 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+start 4B2 0 CODE 0 init C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+__end_of_DHTRESULT 1DCA 0 CODE 0 text13 dist/default/production\PG.X.production.o
+__end_of_i2c_Read 1BFE 0 CODE 0 text2 dist/default/production\PG.X.production.o
+OW_read_bit@PORT 29 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_read_bit@TRIS 27 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+pad@fp 37 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+check_response@TOUT 21 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+check_response@port 22 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+check_response@tris 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__LidataBANK1 0 0 ABS 0 idataBANK1 -
+__LidataBANK2 0 0 ABS 0 idataBANK2 -
+__LidataBANK3 0 0 ABS 0 idataBANK3 -
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_vfpfcnvrt 1580 0 CODE 0 text16 dist/default/production\PG.X.production.o
+__end_of_TXsend 2B38 0 CODE 0 text33 dist/default/production\PG.X.production.o
+_DHTRESULT 1BFE 0 CODE 0 text13 dist/default/production\PG.X.production.o
+___lodiv@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+utoa@d 3A 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+utoa@i 50 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+utoa@n 48 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+utoa@p 46 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+utoa@w 44 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+_OW_write_byte 295E 0 CODE 0 text7 dist/default/production\PG.X.production.o
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_dhtresult 168 0 BANK2 1 bssBANK2 dist/default/production\PG.X.production.o
+wtemp0 7E 0 ABS 0 - dist/default/production\PG.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+OW_read_bit@LAT 2B 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_read_bit@PIN 2D 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__end_of_OW_read_bit 2CF8 0 CODE 0 text11 dist/default/production\PG.X.production.o
+__end_of_OW_read_byte 2A86 0 CODE 0 text10 dist/default/production\PG.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+_vfpfcnvrt 143A 0 CODE 0 text16 dist/default/production\PG.X.production.o
+DS18B20_Read@entry E7 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+DHT22READ@TOUT 28 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+DHT22READ@port 2B 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+DHT22READ@tris 26 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_Reg_init 2B38 0 CODE 0 text4 dist/default/production\PG.X.production.o
+_i2select B2 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+i2creadbyte@add 75 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+i2creadbyte@dir 70 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+i2creadbyte@si2 AD 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+_i2cwrite2byte 2D7A 0 CODE 0 text30 dist/default/production\PG.X.production.o
+_ANSELA 18C 0 ABS 0 - dist/default/production\PG.X.production.o
+_ANSELB 18D 0 ABS 0 - dist/default/production\PG.X.production.o
+_APFCON 11D 0 ABS 0 - dist/default/production\PG.X.production.o
+_BORCON 116 0 ABS 0 - dist/default/production\PG.X.production.o
+_EECON1bits 195 0 ABS 0 - dist/default/production\PG.X.production.o
+__end_of_INTERRUPT_InterruptManager 4B2 0 CODE 0 intentry dist/default/production\PG.X.production.o
+i2creadbyte@value 71 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+_i2cbgin B6 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+__end_of_Reg_init 2B98 0 CODE 0 text4 dist/default/production\PG.X.production.o
+i2c_Read@com E0 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+_EECON1 195 0 ABS 0 - dist/default/production\PG.X.production.o
+_EECON2 196 0 ABS 0 - dist/default/production\PG.X.production.o
+_EEDATA 193 0 ABS 0 - dist/default/production\PG.X.production.o
+_Sys_Init FDE 0 CODE 0 text3 dist/default/production\PG.X.production.o
+DS18B20_Read@LAT E4 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+DS18B20_Read@PIN E6 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of___lodiv FDE 0 CODE 0 text23 dist/default/production\PG.X.production.o
+__end_of___lomod 1332 0 CODE 0 text22 dist/default/production\PG.X.production.o
+_act_com B0 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+__end_of_Sys_Init FEC 0 CODE 0 text3 dist/default/production\PG.X.production.o
+DHT22READ@dhtresult 29 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+___lodiv@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_INTCON B 0 ABS 0 - dist/default/production\PG.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+___stacklo 0 0 ABS 0 - C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+utoa@fp 43 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+i2cwritebyte@data 71 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+OW_write_bit@LAT 22 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_write_bit@PIN 24 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+start_initialization 4B6 0 CODE 0 cinit dist/default/production\PG.X.production.o
+OW_write_bit@write_bit 26 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_OSCCON 99 0 ABS 0 - dist/default/production\PG.X.production.o
+i2c_Read@j E1 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+read_byte@num 23 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_i2cfinish B5 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+clear_ram0 1020 0 CODE 0 clrtext dist/default/production\PG.X.production.o
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__pcstackBANK1 CD 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+_SSPADD 212 0 ABS 0 - dist/default/production\PG.X.production.o
+_SSPBUF 211 0 ABS 0 - dist/default/production\PG.X.production.o
+_TEMPDS 160 0 BANK2 1 bssBANK2 dist/default/production\PG.X.production.o
+_TMR2IF 89 0 ABS 0 - dist/default/production\PG.X.production.o
+_TMR2ON E2 0 ABS 0 - dist/default/production\PG.X.production.o
+_TXsend 2ADC 0 CODE 0 text33 dist/default/production\PG.X.production.o
+_read_OW 28F4 0 CODE 0 text12 dist/default/production\PG.X.production.o
+_LOAD_CELL 122 0 BANK2 1 dataBANK2 dist/default/production\PG.X.production.o
+_WDTCON 97 0 ABS 0 - dist/default/production\PG.X.production.o
+fputc@fp 22 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+fputs@fp 28 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+_start_signal 2CF8 0 CODE 0 text25 dist/default/production\PG.X.production.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hbank4 0 0 ABS 0 bank4 -
+__Hbank5 0 0 ABS 0 bank5 -
+__Hbank6 0 0 ABS 0 bank6 -
+__Hbank7 0 0 BANK7 1 bank7 -
+__Hbank8 0 0 BANK8 1 bank8 -
+__Hbank9 0 0 BANK9 1 bank9 -
+__Hcinit 53A 0 CODE 0 cinit -
+__Hidloc 10008 0 IDLOC 5 idloc -
+__Hsfr10 0 0 ABS 0 sfr10 -
+__Hsfr11 0 0 ABS 0 sfr11 -
+__Hsfr12 0 0 ABS 0 sfr12 -
+__Hsfr13 0 0 ABS 0 sfr13 -
+__Hsfr14 0 0 ABS 0 sfr14 -
+__Hsfr15 0 0 ABS 0 sfr15 -
+__Hsfr16 0 0 ABS 0 sfr16 -
+__Hsfr17 0 0 ABS 0 sfr17 -
+__Hsfr18 0 0 ABS 0 sfr18 -
+__Hsfr19 0 0 ABS 0 sfr19 -
+__Hsfr20 0 0 ABS 0 sfr20 -
+__Hsfr21 0 0 ABS 0 sfr21 -
+__Hsfr22 0 0 ABS 0 sfr22 -
+__Hsfr23 0 0 ABS 0 sfr23 -
+__Hsfr24 0 0 ABS 0 sfr24 -
+__Hsfr25 0 0 ABS 0 sfr25 -
+__Hsfr26 0 0 ABS 0 sfr26 -
+__Hsfr27 0 0 ABS 0 sfr27 -
+__Hsfr28 0 0 ABS 0 sfr28 -
+__Hsfr29 0 0 ABS 0 sfr29 -
+__Hsfr30 0 0 ABS 0 sfr30 -
+__Hsfr31 0 0 ABS 0 sfr31 -
+__Hstack 0 0 STACK 2 stack -
+port_config@stype 21 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__end_of_OW_write_byte 299E 0 CODE 0 text7 dist/default/production\PG.X.production.o
+__Hbank10 0 0 BANK10 1 bank10 -
+__Hbank11 0 0 BANK11 1 bank11 -
+__Hbank12 0 0 BANK12 1 bank12 -
+__Hbank13 0 0 BANK13 1 bank13 -
+__Hbank14 0 0 BANK14 1 bank14 -
+__Hbank15 0 0 BANK15 1 bank15 -
+__Hbank16 0 0 BANK16 1 bank16 -
+__Hbank17 0 0 BANK17 1 bank17 -
+__Hbank18 0 0 BANK18 1 bank18 -
+__Hbank19 0 0 BANK19 1 bank19 -
+__Hbank20 0 0 BANK20 1 bank20 -
+__Hbank21 0 0 BANK21 1 bank21 -
+__Hbank22 0 0 BANK22 1 bank22 -
+__Hbank23 0 0 BANK23 1 bank23 -
+__Hbank24 0 0 BANK24 1 bank24 -
+__Hbank25 0 0 BANK25 1 bank25 -
+__Hbank26 0 0 BANK26 1 bank26 -
+__Hbank27 0 0 BANK27 1 bank27 -
+__Hbank28 0 0 BANK28 1 bank28 -
+__Hbank29 0 0 BANK29 1 bank29 -
+__Hbank30 0 0 BANK30 1 bank30 -
+__Hbank31 0 0 BANK31 1 bank31 -
+__Hbigram 0 0 ABS 0 bigram -
+__Hmaintext 0 0 ABS 0 maintext -
+__end_of_sprintf 2A32 0 CODE 0 text14 dist/default/production\PG.X.production.o
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 10012 0 CONFIG 4 config -
+__end_of_port_config 1A42 0 CODE 0 text1 dist/default/production\PG.X.production.o
+i2cread3byte@add 79 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+i2cread3byte@dir 70 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+i2cread3byte@si2 AC 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lbank4 0 0 ABS 0 bank4 -
+__Lbank5 0 0 ABS 0 bank5 -
+__Lbank6 0 0 ABS 0 bank6 -
+__Lbank7 0 0 BANK7 1 bank7 -
+__Lbank8 0 0 BANK8 1 bank8 -
+__Lbank9 0 0 BANK9 1 bank9 -
+__Lcinit 4B6 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 5 idloc -
+OW_read_byte@PORT 32 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_read_byte@TRIS 30 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_read_byte@loop 39 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__Lsfr10 0 0 ABS 0 sfr10 -
+__Lsfr11 0 0 ABS 0 sfr11 -
+__Lsfr12 0 0 ABS 0 sfr12 -
+__Lsfr13 0 0 ABS 0 sfr13 -
+__Lsfr14 0 0 ABS 0 sfr14 -
+__Lsfr15 0 0 ABS 0 sfr15 -
+__Lsfr16 0 0 ABS 0 sfr16 -
+__Lsfr17 0 0 ABS 0 sfr17 -
+__Lsfr18 0 0 ABS 0 sfr18 -
+__Lsfr19 0 0 ABS 0 sfr19 -
+__Lsfr20 0 0 ABS 0 sfr20 -
+__Lsfr21 0 0 ABS 0 sfr21 -
+__Lsfr22 0 0 ABS 0 sfr22 -
+__Lsfr23 0 0 ABS 0 sfr23 -
+__Lsfr24 0 0 ABS 0 sfr24 -
+__Lsfr25 0 0 ABS 0 sfr25 -
+__Lsfr26 0 0 ABS 0 sfr26 -
+__Lsfr27 0 0 ABS 0 sfr27 -
+__Lsfr28 0 0 ABS 0 sfr28 -
+__Lsfr29 0 0 ABS 0 sfr29 -
+__Lsfr30 0 0 ABS 0 sfr30 -
+__Lsfr31 0 0 ABS 0 sfr31 -
+__Lstack 0 0 STACK 2 stack -
+init_ram FEC 0 CODE 0 inittext dist/default/production\PG.X.production.o
+__Linittext 0 0 ABS 0 inittext -
+_INTCONbits B 0 ABS 0 - dist/default/production\PG.X.production.o
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 4B2 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsfr4 0 0 ABS 0 sfr4 -
+__Hsfr5 0 0 ABS 0 sfr5 -
+__Hsfr6 0 0 ABS 0 sfr6 -
+__Hsfr7 0 0 ABS 0 sfr7 -
+__Hsfr8 0 0 ABS 0 sfr8 -
+__Hsfr9 0 0 ABS 0 sfr9 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 4B2 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsfr4 0 0 ABS 0 sfr4 -
+__Lsfr5 0 0 ABS 0 sfr5 -
+__Lsfr6 0 0 ABS 0 sfr6 -
+__Lsfr7 0 0 ABS 0 sfr7 -
+__Lsfr8 0 0 ABS 0 sfr8 -
+__Lsfr9 0 0 ABS 0 sfr9 -
+__Ltext 0 0 ABS 0 text -
+__pstringtext1 3000 0 STRCODE 0 stringtext1 dist/default/production\PG.X.production.o
+__pstringtext2 0 0 STRCODE 0 stringtext2 dist/default/production\PG.X.production.o
+start_signal@port 22 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+start_signal@tris 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__end_of_i2cwrite2byte 2E06 0 CODE 0 text30 dist/default/production\PG.X.production.o
+_port_save BC 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+___lomod@counter 31 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__LcstackBANK1 0 0 ABS 0 cstackBANK1 -
+int$flags 7E 0 ABS 0 - dist/default/production\PG.X.production.o
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_COM EC 0 BANK1 1 dataBANK1 dist/default/production\PG.X.production.o
+_LUX 15B 0 BANK2 1 bssBANK2 dist/default/production\PG.X.production.o
+_Lum CB 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+_RA0 60 0 ABS 0 - dist/default/production\PG.X.production.o
+_RA1 61 0 ABS 0 - dist/default/production\PG.X.production.o
+_RA2 62 0 ABS 0 - dist/default/production\PG.X.production.o
+_RA3 63 0 ABS 0 - dist/default/production\PG.X.production.o
+_RA4 64 0 ABS 0 - dist/default/production\PG.X.production.o
+_RA5 65 0 ABS 0 - dist/default/production\PG.X.production.o
+_RA6 66 0 ABS 0 - dist/default/production\PG.X.production.o
+_RA7 67 0 ABS 0 - dist/default/production\PG.X.production.o
+_RB0 68 0 ABS 0 - dist/default/production\PG.X.production.o
+_RB1 69 0 ABS 0 - dist/default/production\PG.X.production.o
+_RB2 6A 0 ABS 0 - dist/default/production\PG.X.production.o
+_RB3 6B 0 ABS 0 - dist/default/production\PG.X.production.o
+_RB4 6C 0 ABS 0 - dist/default/production\PG.X.production.o
+_RB5 6D 0 ABS 0 - dist/default/production\PG.X.production.o
+_RB7 6F 0 ABS 0 - dist/default/production\PG.X.production.o
+_RC0 70 0 ABS 0 - dist/default/production\PG.X.production.o
+_RC1 71 0 ABS 0 - dist/default/production\PG.X.production.o
+_RC2 72 0 ABS 0 - dist/default/production\PG.X.production.o
+_RC5 75 0 ABS 0 - dist/default/production\PG.X.production.o
+__S0 1803 0 ABS 0 - -
+__S1 1D7 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_pad 2B98 0 CODE 0 text18 dist/default/production\PG.X.production.o
+OW_write_byte@TRIS 27 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_write_byte@loop 2E 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+DS18B20_Read@j 6D 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_endi2c B7 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+sprintf@fmt CF 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+_i2creadbyte 1332 0 CODE 0 text31 dist/default/production\PG.X.production.o
+__end_of_pad 2C02 0 CODE 0 text18 dist/default/production\PG.X.production.o
+TXsend@i 7D 0 COMMON 1 bssCOMMON dist/default/production\PG.X.production.o
+_i2busy B1 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+__Lintentry 8 0 CODE 0 intentry -
+__end_of_start_signal 2D7A 0 CODE 0 text25 dist/default/production\PG.X.production.o
+reset_vec 0 0 CODE 0 reset_vec C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+__pdataBANK1 EC 0 BANK1 1 dataBANK1 dist/default/production\PG.X.production.o
+__pdataBANK2 120 0 BANK2 1 dataBANK2 dist/default/production\PG.X.production.o
+__pdataBANK3 1C0 0 BANK3 1 dataBANK3 dist/default/production\PG.X.production.o
+__LbssBANK1 0 0 ABS 0 bssBANK1 -
+__LbssBANK2 0 0 ABS 0 bssBANK2 -
+__LbssBANK3 0 0 ABS 0 bssBANK3 -
+_i2cwritebyte 2C02 0 CODE 0 text29 dist/default/production\PG.X.production.o
+__Lstringtext1 0 0 ABS 0 stringtext1 -
+__Lstringtext2 0 0 ABS 0 stringtext2 -
+vfpfcnvrt@fmt 52 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intentry dist/default/production\PG.X.production.o
+_PIE1bits 91 0 ABS 0 - dist/default/production\PG.X.production.o
+DHTRESULT@COM E4 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+DHTRESULT@dht E3 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+DHTRESULT@hum 14D 0 BANK2 1 bssBANK2 dist/default/production\PG.X.production.o
+_med_sl B8 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+pad@buf 2F 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_Pin_init 28C4 0 CODE 0 text5 dist/default/production\PG.X.production.o
+__ptext10 2A32 0 CODE 0 text10 dist/default/production\PG.X.production.o
+__ptext11 2C7A 0 CODE 0 text11 dist/default/production\PG.X.production.o
+__ptext12 28F4 0 CODE 0 text12 dist/default/production\PG.X.production.o
+__ptext13 1BFE 0 CODE 0 text13 dist/default/production\PG.X.production.o
+__ptext14 29E8 0 CODE 0 text14 dist/default/production\PG.X.production.o
+__ptext15 2926 0 CODE 0 text15 dist/default/production\PG.X.production.o
+__ptext16 143A 0 CODE 0 text16 dist/default/production\PG.X.production.o
+__ptext17 16F2 0 CODE 0 text17 dist/default/production\PG.X.production.o
+__ptext18 2B98 0 CODE 0 text18 dist/default/production\PG.X.production.o
+__ptext19 299E 0 CODE 0 text19 dist/default/production\PG.X.production.o
+__ptext20 102C 0 CODE 0 text20 dist/default/production\PG.X.production.o
+__ptext21 6 0 CODE 0 text21 dist/default/production\PG.X.production.o
+__ptext22 1250 0 CODE 0 text22 dist/default/production\PG.X.production.o
+__ptext23 ED6 0 CODE 0 text23 dist/default/production\PG.X.production.o
+__ptext24 2EAE 0 CODE 0 text24 dist/default/production\PG.X.production.o
+__ptext25 2CF8 0 CODE 0 text25 dist/default/production\PG.X.production.o
+__ptext26 2E06 0 CODE 0 text26 dist/default/production\PG.X.production.o
+__ptext27 2F56 0 CODE 0 text27 dist/default/production\PG.X.production.o
+__ptext29 2C02 0 CODE 0 text29 dist/default/production\PG.X.production.o
+__ptext30 2D7A 0 CODE 0 text30 dist/default/production\PG.X.production.o
+__ptext31 1332 0 CODE 0 text31 dist/default/production\PG.X.production.o
+__ptext32 1580 0 CODE 0 text32 dist/default/production\PG.X.production.o
+__ptext33 2ADC 0 CODE 0 text33 dist/default/production\PG.X.production.o
+DHT22READ@COM 2A 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+TXsend@size 72 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+TXsend@word 70 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+_BAUDCON 19F 0 ABS 0 - dist/default/production\PG.X.production.o
+___lodiv ED6 0 CODE 0 text23 dist/default/production\PG.X.production.o
+___lomod 1250 0 CODE 0 text22 dist/default/production\PG.X.production.o
+__Lbank10 0 0 BANK10 1 bank10 -
+__Lbank11 0 0 BANK11 1 bank11 -
+__Lbank12 0 0 BANK12 1 bank12 -
+__Lbank13 0 0 BANK13 1 bank13 -
+__Lbank14 0 0 BANK14 1 bank14 -
+__Lbank15 0 0 BANK15 1 bank15 -
+__Lbank16 0 0 BANK16 1 bank16 -
+__Lbank17 0 0 BANK17 1 bank17 -
+__Lbank18 0 0 BANK18 1 bank18 -
+__Lbank19 0 0 BANK19 1 bank19 -
+__Lbank20 0 0 BANK20 1 bank20 -
+__Lbank21 0 0 BANK21 1 bank21 -
+__Lbank22 0 0 BANK22 1 bank22 -
+__Lbank23 0 0 BANK23 1 bank23 -
+__Lbank24 0 0 BANK24 1 bank24 -
+__Lbank25 0 0 BANK25 1 bank25 -
+__Lbank26 0 0 BANK26 1 bank26 -
+__Lbank27 0 0 BANK27 1 bank27 -
+__Lbank28 0 0 BANK28 1 bank28 -
+__Lbank29 0 0 BANK29 1 bank29 -
+__Lbank30 0 0 BANK30 1 bank30 -
+__Lbank31 0 0 BANK31 1 bank31 -
+__pmaintext 53A 0 CODE 0 maintext dist/default/production\PG.X.production.o
+__Lbigram 0 0 ABS 0 bigram -
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 0 0 CONFIG 4 config -
+__end_of_Pin_init 28F4 0 CODE 0 text5 dist/default/production\PG.X.production.o
+read_OW@PIN 24 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__Hinittext 0 0 ABS 0 inittext -
+i2cwritebyte@add 74 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+i2cwritebyte@dir 70 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+i2cwritebyte@si3 AE 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+INTERRUPT_InterruptManager@sspo A9 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+OW_write_byte@LAT 29 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_write_byte@PIN 2B 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+main@i_379 EA 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+_tempar C7 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+_OSCTUNE 98 0 ABS 0 - dist/default/production\PG.X.production.o
+_weight 16C 0 BANK2 1 bssBANK2 dist/default/production\PG.X.production.o
+INTERRUPT_InterruptManager@h 7C 0 COMMON 1 bssCOMMON dist/default/production\PG.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__pbssCOMMON 7C 0 COMMON 1 bssCOMMON dist/default/production\PG.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackBANK1 0 0 ABS 0 cstackBANK1 -
+_PIR1bits 11 0 ABS 0 - dist/default/production\PG.X.production.o
+__Lend_init 4B2 0 CODE 0 end_init -
+vfpfcnvrt@convarg 58 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+___lomod@divisor 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+i2c_Read@j_361 E3 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+end_of_initialization 532 0 CODE 0 cinit dist/default/production\PG.X.production.o
+__Hintentry 4B2 0 CODE 0 intentry -
+fputc@c 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+fputs@c 2C 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+fputs@i 2D 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+fputs@s 2B 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__end_of_i2cwritebyte 2C7A 0 CODE 0 text29 dist/default/production\PG.X.production.o
+_i2cread3byte 1580 0 CODE 0 text32 dist/default/production\PG.X.production.o
+__Lstrings 0 0 ABS 0 strings -
+?___lodiv 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+?___lomod 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+vfprintf@fmt 63 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_reset_pulse@LAT 2B 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_reset_pulse@PIN 2D 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec -
+_OW_read_bit 2C7A 0 CODE 0 text11 dist/default/production\PG.X.production.o
+__HbssBANK1 0 0 ABS 0 bssBANK1 -
+__HbssBANK2 0 0 ABS 0 bssBANK2 -
+__HbssBANK3 0 0 ABS 0 bssBANK3 -
+__end_of_DHT22READ 2F56 0 CODE 0 text24 dist/default/production\PG.X.production.o
+read_OW@read_data 26 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_SSPCON1bits 215 0 ABS 0 - dist/default/production\PG.X.production.o
+_SSPCON2bits 216 0 ABS 0 - dist/default/production\PG.X.production.o
+vfpfcnvrt@ap 53 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+vfpfcnvrt@cp 61 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+vfpfcnvrt@fp 60 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__ptext1 1888 0 CODE 0 text1 dist/default/production\PG.X.production.o
+__ptext2 1A42 0 CODE 0 text2 dist/default/production\PG.X.production.o
+__ptext3 FDE 0 CODE 0 text3 dist/default/production\PG.X.production.o
+__ptext4 2B38 0 CODE 0 text4 dist/default/production\PG.X.production.o
+__ptext5 28C4 0 CODE 0 text5 dist/default/production\PG.X.production.o
+__ptext6 1DCA 0 CODE 0 text6 dist/default/production\PG.X.production.o
+__ptext7 295E 0 CODE 0 text7 dist/default/production\PG.X.production.o
+__ptext8 10DA 0 CODE 0 text8 dist/default/production\PG.X.production.o
+__ptext9 118C 0 CODE 0 text9 dist/default/production\PG.X.production.o
+vfprintf@ap 65 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+vfprintf@fp 67 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+vfprintf@cfmt 68 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_DS18B20_Read 1DCA 0 CODE 0 text6 dist/default/production\PG.X.production.o
+_sprintf 29E8 0 CODE 0 text14 dist/default/production\PG.X.production.o
+DS18B20_Read@PORT E2 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+DS18B20_Read@TRIS E0 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+_vfprintf 2926 0 CODE 0 text15 dist/default/production\PG.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+sprintf@ap D5 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+_check_response 2F56 0 CODE 0 text27 dist/default/production\PG.X.production.o
+___lodiv@quotient 31 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec -
+read_byte@i 25 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__Hstringtext1 0 0 ABS 0 stringtext1 -
+__Hstringtext2 0 0 ABS 0 stringtext2 -
+_OW_write_bit 10DA 0 CODE 0 text8 dist/default/production\PG.X.production.o
+__end_of_vfprintf 295E 0 CODE 0 text15 dist/default/production\PG.X.production.o
+_DHT22READ 2EAE 0 CODE 0 text24 dist/default/production\PG.X.production.o
+DHTRESULT@TOUT E2 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+DHTRESULT@port E5 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+DHTRESULT@temp 14F 0 BANK2 1 bssBANK2 dist/default/production\PG.X.production.o
+DHTRESULT@tris E0 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+___lomod@dividend 28 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_write_bit@TRIS 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+___heap_lo 0 0 ABS 0 - C:\Users\javie\AppData\Local\Temp\xcAs129g.o
+OW_reset_pulse@PORT 29 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_reset_pulse@TRIS 27 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_read_bit@read_data 2F 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__end_of__initialization 532 0 CODE 0 cinit dist/default/production\PG.X.production.o
+__end_of_read_byte 2EAE 0 CODE 0 text26 dist/default/production\PG.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+INTERRUPT_InterruptManager@i2cstep AB 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+__pidataBANK1 FF8 0 CODE 0 idataBANK1 dist/default/production\PG.X.production.o
+__pidataBANK2 2A86 0 CODE 0 idataBANK2 dist/default/production\PG.X.production.o
+__pidataBANK3 2896 0 CODE 0 idataBANK3 dist/default/production\PG.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+i2cwrite2byte@add 75 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+i2cwrite2byte@dir 70 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+i2cwrite2byte@si3 AF 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+_meddone A2 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+___lodiv@counter 39 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_write_byte@write_data 2D 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_read_byte@LAT 34 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+OW_read_byte@PIN 36 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_SSPCON1 215 0 ABS 0 - dist/default/production\PG.X.production.o
+_SSPCON2 216 0 ABS 0 - dist/default/production\PG.X.production.o
+_SSPSTAT 214 0 ABS 0 - dist/default/production\PG.X.production.o
+__Hend_init 4B6 0 CODE 0 end_init -
+_read_byte 2E06 0 CODE 0 text26 dist/default/production\PG.X.production.o
+INTERRUPT_InterruptManager@rp AA 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+sprintf@f D6 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+sprintf@s CD 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+__end_of_i2cread3byte 16F2 0 CODE 0 text32 dist/default/production\PG.X.production.o
+__end_of_main ED6 0 CODE 0 maintext dist/default/production\PG.X.production.o
+__end_of_utoa 1888 0 CODE 0 text17 dist/default/production\PG.X.production.o
+DHTRESULT@j E6 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+_OW_reset_pulse 118C 0 CODE 0 text9 dist/default/production\PG.X.production.o
+_DS18B 13F 0 BANK2 1 dataBANK2 dist/default/production\PG.X.production.o
+_EEADR 191 0 ABS 0 - dist/default/production\PG.X.production.o
+__end_of_fputc 10DA 0 CODE 0 text20 dist/default/production\PG.X.production.o
+__end_of_fputs 29E8 0 CODE 0 text19 dist/default/production\PG.X.production.o
+?_sprintf CD 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+_PORTA C 0 ABS 0 - dist/default/production\PG.X.production.o
+_PORTB D 0 ABS 0 - dist/default/production\PG.X.production.o
+_PORTC E 0 ABS 0 - dist/default/production\PG.X.production.o
+_RCREG 199 0 ABS 0 - dist/default/production\PG.X.production.o
+_RCSTA 19D 0 ABS 0 - dist/default/production\PG.X.production.o
+_SPBRG 19B 0 ABS 0 - dist/default/production\PG.X.production.o
+_T1CON 18 0 ABS 0 - dist/default/production\PG.X.production.o
+_T2CON 1C 0 ABS 0 - dist/default/production\PG.X.production.o
+_TRISA 8C 0 ABS 0 - dist/default/production\PG.X.production.o
+_TRISB 8D 0 ABS 0 - dist/default/production\PG.X.production.o
+_TRISC 8E 0 ABS 0 - dist/default/production\PG.X.production.o
+_TXREG 19A 0 ABS 0 - dist/default/production\PG.X.production.o
+_TXSTA 19E 0 ABS 0 - dist/default/production\PG.X.production.o
+__end_of_putch 8 0 CODE 0 text21 dist/default/production\PG.X.production.o
+i2cread3byte@value 71 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+_flags A6 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+_fputc 102C 0 CODE 0 text20 dist/default/production\PG.X.production.o
+_fputs 299E 0 CODE 0 text19 dist/default/production\PG.X.production.o
+_i2cqt B3 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+_humar 164 0 BANK2 1 bssBANK2 dist/default/production\PG.X.production.o
+__end_of_check_response 3000 0 CODE 0 text27 dist/default/production\PG.X.production.o
+_putch 6 0 CODE 0 text21 dist/default/production\PG.X.production.o
+OW_read_byte@result 38 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+_sport BD 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+i2cwrite2byte@data 71 0 COMMON 1 cstackCOMMON dist/default/production\PG.X.production.o
+_width 14B 0 BANK2 1 bssBANK2 dist/default/production\PG.X.production.o
+__pintentry 8 0 CODE 0 intentry dist/default/production\PG.X.production.o
+__end_of_i2creadbyte 143A 0 CODE 0 text31 dist/default/production\PG.X.production.o
+__HdataBANK1 0 0 ABS 0 dataBANK1 -
+__HdataBANK2 0 0 ABS 0 dataBANK2 -
+__HdataBANK3 0 0 ABS 0 dataBANK3 -
+__end_of_DS18B20_Read 2000 0 CODE 0 text6 dist/default/production\PG.X.production.o
+__initialization 4B6 0 CODE 0 cinit dist/default/production\PG.X.production.o
+_Lectura B9 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+__pbssBANK1 A0 0 BANK1 1 bssBANK1 dist/default/production\PG.X.production.o
+__pbssBANK2 14B 0 BANK2 1 bssBANK2 dist/default/production\PG.X.production.o
+__pbssBANK3 1A0 0 BANK3 1 bssBANK3 dist/default/production\PG.X.production.o
+read_byte@port 24 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+read_byte@tris 20 0 BANK0 1 cstackBANK0 dist/default/production\PG.X.production.o
+__end_of_OW_write_bit 118C 0 CODE 0 text8 dist/default/production\PG.X.production.o
+_STATUSbits 3 0 ABS 0 - dist/default/production\PG.X.production.o
+DHTRESULT@conector E1 0 BANK1 1 cstackBANK1 dist/default/production\PG.X.production.o
+_OW_read_byte 2A32 0 CODE 0 text10 dist/default/production\PG.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text1 0 C44 1888 DD 2
+text2 0 D21 1A42 DE 2
+text4 0 159C 2B38 30 2
+text5 0 1462 28C4 18 2
+text6 0 EE5 1DCA 11B 2
+text7 0 14AF 295E 20 2
+text8 0 86D 10DA 59 2
+text9 0 8C6 118C 62 2
+text10 0 1519 2A32 2A 2
+text11 0 163D 2C7A 3F 2
+text12 0 147A 28F4 19 2
+text13 0 DFF 1BFE E6 2
+text14 0 14F4 29E8 25 2
+text15 0 1493 2926 1C 2
+text16 0 A1D 143A A3 2
+text17 0 B79 16F2 CB 2
+text18 0 15CC 2B98 35 2
+text19 0 14CF 299E 25 2
+text20 0 816 102C 57 2
+text21 0 3 6 1 2
+text22 0 928 1250 71 2
+text24 0 1757 2EAE 54 2
+text25 0 167C 2CF8 41 2
+text26 0 1703 2E06 54 2
+text27 0 17AB 2F56 55 2
+text29 0 1601 2C02 3C 2
+text30 0 16BD 2D7A 46 2
+text31 0 999 1332 84 2
+text32 0 AC0 1580 B9 2
+text33 0 156E 2ADC 2E 2
+cstackCOMMON 1 70 70 E 1
+cstackBANK0 1 20 20 4F 1
+stringtext1 0 1800 3000 3 2
+intentry 0 4 8 7FC 2
+reset_vec 0 0 0 2 2
+bssBANK1 1 A0 A0 50 1
+bssBANK3 1 1A0 1A0 37 1
+idataBANK2 0 1543 2A86 2B 2
+idataBANK3 0 144B 2896 17 2
+dataBANK2 1 120 120 50 1
+clrtext 0 810 1020 6 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

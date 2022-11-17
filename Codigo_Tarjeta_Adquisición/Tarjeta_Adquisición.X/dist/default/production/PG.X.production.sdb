@@ -1,0 +1,756 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1936 ]
+[d frameptr 6 ]
+"60 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+[v _read_OW read_OW `(uc  1 e 1 0 ]
+"82
+[v _OW_reset_pulse OW_reset_pulse `(uc  1 e 1 0 ]
+"118
+[v _OW_write_bit OW_write_bit `(v  1 e 1 0 ]
+"152
+[v _OW_read_bit OW_read_bit `(uc  1 e 1 0 ]
+"177
+[v _OW_write_byte OW_write_byte `(v  1 e 1 0 ]
+"197
+[v _OW_read_byte OW_read_byte `(uc  1 e 1 0 ]
+"133 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+[v _pad pad `(v  1 s 1 pad ]
+"894
+[v _utoa utoa `(v  1 s 1 utoa ]
+"1007
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+"1520
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"14 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+[v _Pin_init Pin_init `(v  1 e 1 0 ]
+"47
+[v _Reg_init Reg_init `(v  1 e 1 0 ]
+"83
+[v _Sys_Init Sys_Init `(v  1 e 1 0 ]
+"71 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+[v _DHTRESULT DHTRESULT `(v  1 e 1 0 ]
+"103
+[v _DS18B20_Read DS18B20_Read `(v  1 e 1 0 ]
+"137
+[v _pinlow pinlow `(v  1 e 1 0 ]
+"142
+[v _pinhigh pinhigh `(v  1 e 1 0 ]
+"155
+[v _i2cwrite2byte i2cwrite2byte `(v  1 e 1 0 ]
+"189
+[v _i2cwritebyte i2cwritebyte `(v  1 e 1 0 ]
+"217
+[v _i2creadbyte i2creadbyte `(ui  1 e 2 0 ]
+"268
+[v _i2cread3byte i2cread3byte `(ul  1 e 4 0 ]
+"325
+[v _i2c_Read i2c_Read `(v  1 e 1 0 ]
+"371
+[v _port_config port_config `(v  1 e 1 0 ]
+"459
+[v _main main `(v  1 e 1 0 ]
+"714
+[v _TXsend TXsend `(v  1 e 1 0 ]
+"730
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"13 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+[v _start_signal start_signal `(v  1 e 1 0 ]
+"29
+[v _check_response check_response `(uc  1 e 1 0 ]
+"64
+[v _read_byte read_byte `(uc  1 e 1 0 ]
+"90
+[v _DHT22READ DHT22READ `(v  1 e 1 0 ]
+[s S164 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+]
+"132 C:/Program Files/Microchip/MPLABX/v6.00/packs/Microchip/PIC12-16F1xxx_DFP/1.3.90/xc8\pic\include\proc\pic16f1936.h
+[s S170 . 1 `uc 1 CARRY 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 ZERO 1 0 :1:2 
+]
+[u S174 . 1 `S164 1 . 1 0 `S170 1 . 1 0 ]
+[v _STATUSbits STATUSbits `VES174  1 e 1 @3 ]
+"352
+[v _INTCON INTCON `VEuc  1 e 1 @11 ]
+[s S188 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"375
+[s S197 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S202 . 1 `S188 1 . 1 0 `S197 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES202  1 e 1 @11 ]
+"430
+[v _PORTA PORTA `VEuc  1 e 1 @12 ]
+"492
+[v _PORTB PORTB `VEuc  1 e 1 @13 ]
+"554
+[v _PORTC PORTC `VEuc  1 e 1 @14 ]
+[s S227 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+"654
+[u S236 . 1 `S227 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES236  1 e 1 @17 ]
+"869
+[v _T1CON T1CON `VEuc  1 e 1 @24 ]
+"1018
+[v _TMR2 TMR2 `VEuc  1 e 1 @26 ]
+"1058
+[v _T2CON T2CON `VEuc  1 e 1 @28 ]
+"1223
+[v _TRISA TRISA `VEuc  1 e 1 @140 ]
+"1285
+[v _TRISB TRISB `VEuc  1 e 1 @141 ]
+"1347
+[v _TRISC TRISC `VEuc  1 e 1 @142 ]
+[s S44 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+"1447
+[u S53 . 1 `S44 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES53  1 e 1 @145 ]
+"1729
+[v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
+"1788
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @152 ]
+"1846
+[v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"2188
+[v _LATA LATA `VEuc  1 e 1 @268 ]
+"2250
+[v _LATB LATB `VEuc  1 e 1 @269 ]
+"2312
+[v _LATC LATC `VEuc  1 e 1 @270 ]
+"2667
+[v _BORCON BORCON `VEuc  1 e 1 @278 ]
+"3016
+[v _APFCON APFCON `VEuc  1 e 1 @285 ]
+"3072
+[v _ANSELA ANSELA `VEuc  1 e 1 @396 ]
+"3130
+[v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
+"3188
+[v _EEADR EEADR `VEus  1 e 2 @401 ]
+"3247
+[v _EEDATA EEDATA `VEuc  1 e 1 @403 ]
+"3300
+[v _EECON1 EECON1 `VEuc  1 e 1 @405 ]
+[s S142 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+"3317
+[u S151 . 1 `S142 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES151  1 e 1 @405 ]
+"3362
+[v _EECON2 EECON2 `VEuc  1 e 1 @406 ]
+"3382
+[v _RCREG RCREG `VEuc  1 e 1 @409 ]
+"3402
+[v _TXREG TXREG `VEuc  1 e 1 @410 ]
+"3434
+[v _SPBRG SPBRG `VEuc  1 e 1 @411 ]
+"3521
+[v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
+"3583
+[v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
+"3645
+[v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
+"3697
+[v _WPUB WPUB `VEuc  1 e 1 @525 ]
+"3767
+[v _WPUE WPUE `VEuc  1 e 1 @528 ]
+"3788
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @529 ]
+"3808
+[v _SSPADD SSPADD `VEuc  1 e 1 @530 ]
+"3848
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @532 ]
+"3910
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @533 ]
+[s S461 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"3935
+[s S470 . 1 `uc 1 SSPM 1 0 :4:0 
+]
+[u S472 . 1 `S461 1 . 1 0 `S470 1 . 1 0 ]
+[v _SSPCON1bits SSPCON1bits `VES472  1 e 1 @533 ]
+"4048
+[v _SSPCON2 SSPCON2 `VEuc  1 e 1 @534 ]
+[s S93 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"4065
+[u S102 . 1 `S93 1 . 1 0 ]
+[v _SSPCON2bits SSPCON2bits `VES102  1 e 1 @534 ]
+"8146
+[v _RA0 RA0 `VEb  1 e 0 @96 ]
+"8149
+[v _RA1 RA1 `VEb  1 e 0 @97 ]
+"8152
+[v _RA2 RA2 `VEb  1 e 0 @98 ]
+"8155
+[v _RA3 RA3 `VEb  1 e 0 @99 ]
+"8158
+[v _RA4 RA4 `VEb  1 e 0 @100 ]
+"8161
+[v _RA5 RA5 `VEb  1 e 0 @101 ]
+"8164
+[v _RA6 RA6 `VEb  1 e 0 @102 ]
+"8167
+[v _RA7 RA7 `VEb  1 e 0 @103 ]
+"8170
+[v _RB0 RB0 `VEb  1 e 0 @104 ]
+"8173
+[v _RB1 RB1 `VEb  1 e 0 @105 ]
+"8176
+[v _RB2 RB2 `VEb  1 e 0 @106 ]
+"8179
+[v _RB3 RB3 `VEb  1 e 0 @107 ]
+"8182
+[v _RB4 RB4 `VEb  1 e 0 @108 ]
+"8185
+[v _RB5 RB5 `VEb  1 e 0 @109 ]
+"8191
+[v _RB7 RB7 `VEb  1 e 0 @111 ]
+"8194
+[v _RC0 RC0 `VEb  1 e 0 @112 ]
+"8197
+[v _RC1 RC1 `VEb  1 e 0 @113 ]
+"8200
+[v _RC2 RC2 `VEb  1 e 0 @114 ]
+"8209
+[v _RC5 RC5 `VEb  1 e 0 @117 ]
+"8227
+[v _RCIF RCIF `VEb  1 e 0 @141 ]
+"8812
+[v _TMR2IF TMR2IF `VEb  1 e 0 @137 ]
+"8815
+[v _TMR2ON TMR2ON `VEb  1 e 0 @226 ]
+"8950
+[v _TXIF TXIF `VEb  1 e 0 @140 ]
+"99 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+[v _prec prec `i  1 s 2 prec ]
+[v _width width `i  1 s 2 width ]
+"100
+[v _flags flags `uc  1 s 1 flags ]
+"125
+[v _dbuf dbuf `[32]uc  1 s 32 dbuf ]
+"41 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+[v _port_save port_save `uc  1 e 1 0 ]
+"42
+[v _cs cs `uc  1 e 1 0 ]
+[v _TOUT TOUT `uc  1 e 1 0 ]
+[v _Lectura Lectura `uc  1 e 1 0 ]
+[v _med_sl med_sl `uc  1 e 1 0 ]
+[v _endi2c endi2c `uc  1 e 1 0 ]
+[v _i2cbgin i2cbgin `uc  1 e 1 0 ]
+[v _i2cfinish i2cfinish `uc  1 e 1 0 ]
+"43
+[v _Temp Temp `ui  1 e 2 0 ]
+[v _Lum Lum `ui  1 e 2 0 ]
+[v _meddone meddone `ui  1 e 2 0 ]
+"44
+[v _weight weight `ul  1 e 4 0 ]
+"45
+[v _i2cqt i2cqt `uc  1 e 1 0 ]
+[v _i2select i2select `uc  1 e 1 0 ]
+[v _i2busy i2busy `uc  1 e 1 0 ]
+[v _act_com act_com `uc  1 e 1 0 ]
+"47
+[v _dhtresult dhtresult `[4]uc  1 e 4 0 ]
+"48
+[v _tempar tempar `[4]uc  1 e 4 0 ]
+[v _humar humar `[4]uc  1 e 4 0 ]
+"49
+[v _TEMPDS TEMPDS `[4]uc  1 e 4 0 ]
+"50
+[v _LUX LUX `[5]uc  1 e 5 0 ]
+"51
+[v _KG KG `[8]uc  1 e 8 0 ]
+"52
+[v _COM COM `[4]uc  1 e 4 0 ]
+"53
+[v _DHTS DHTS `[23]uc  1 e 23 0 ]
+"54
+[v _DS18B DS18B `[12]uc  1 e 12 0 ]
+"55
+[v _VEML7700 VEML7700 `[13]uc  1 e 13 0 ]
+"56
+[v _LOAD_CELL LOAD_CELL `[16]uc  1 e 16 0 ]
+"58
+[v _sport sport `[10]uc  1 e 10 0 ]
+"459
+[v _main main `(v  1 e 1 0 ]
+{
+"472
+[v main@i_379 i `uc  1 a 1 29 ]
+"462
+[v main@i i `uc  1 a 1 30 ]
+"713
+} 0
+"371
+[v _port_config port_config `(v  1 e 1 0 ]
+{
+[v port_config@stype stype `*.4uc  1 a 1 wreg ]
+[v port_config@stype stype `*.4uc  1 a 1 wreg ]
+[v port_config@stype stype `*.4uc  1 a 1 1 ]
+"457
+} 0
+"325
+[v _i2c_Read i2c_Read `(v  1 e 1 0 ]
+{
+[v i2c_Read@com com `uc  1 a 1 wreg ]
+"353
+[v i2c_Read@j_361 j `i  1 a 2 22 ]
+"334
+[v i2c_Read@j j `i  1 a 2 20 ]
+"325
+[v i2c_Read@com com `uc  1 a 1 wreg ]
+[v i2c_Read@com com `uc  1 a 1 19 ]
+"369
+} 0
+"83 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Init.c
+[v _Sys_Init Sys_Init `(v  1 e 1 0 ]
+{
+"87
+} 0
+"47
+[v _Reg_init Reg_init `(v  1 e 1 0 ]
+{
+"82
+} 0
+"14
+[v _Pin_init Pin_init `(v  1 e 1 0 ]
+{
+"46
+} 0
+"103 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+[v _DS18B20_Read DS18B20_Read `(v  1 e 1 0 ]
+{
+"122
+[v DS18B20_Read@j j `i  1 a 2 77 ]
+"103
+[v DS18B20_Read@TRIS TRIS `*.39uc  1 p 2 19 ]
+[v DS18B20_Read@PORT PORT `*.39uc  1 p 2 21 ]
+[v DS18B20_Read@LAT LAT `*.39uc  1 p 2 23 ]
+[v DS18B20_Read@PIN PIN `uc  1 p 1 25 ]
+[v DS18B20_Read@entry entry `uc  1 p 1 26 ]
+"135
+} 0
+"177 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\1wire.c
+[v _OW_write_byte OW_write_byte `(v  1 e 1 0 ]
+{
+[v OW_write_byte@write_data write_data `uc  1 a 1 wreg ]
+"179
+[v OW_write_byte@loop loop `uc  1 a 1 14 ]
+"177
+[v OW_write_byte@write_data write_data `uc  1 a 1 wreg ]
+[v OW_write_byte@TRIS TRIS `*.39uc  1 p 2 7 ]
+[v OW_write_byte@LAT LAT `*.39uc  1 p 2 9 ]
+[v OW_write_byte@PIN PIN `uc  1 p 1 11 ]
+"181
+[v OW_write_byte@write_data write_data `uc  1 a 1 13 ]
+"186
+} 0
+"118
+[v _OW_write_bit OW_write_bit `(v  1 e 1 0 ]
+{
+[v OW_write_bit@write_bit write_bit `uc  1 a 1 wreg ]
+[v OW_write_bit@write_bit write_bit `uc  1 a 1 wreg ]
+[v OW_write_bit@TRIS TRIS `*.39uc  1 p 2 0 ]
+[v OW_write_bit@LAT LAT `*.39uc  1 p 2 2 ]
+[v OW_write_bit@PIN PIN `uc  1 p 1 4 ]
+"120
+[v OW_write_bit@write_bit write_bit `uc  1 a 1 6 ]
+"140
+} 0
+"82
+[v _OW_reset_pulse OW_reset_pulse `(uc  1 e 1 0 ]
+{
+[v OW_reset_pulse@TRIS TRIS `*.39uc  1 p 2 7 ]
+[v OW_reset_pulse@PORT PORT `*.39uc  1 p 2 9 ]
+[v OW_reset_pulse@LAT LAT `*.39uc  1 p 2 11 ]
+[v OW_reset_pulse@PIN PIN `uc  1 p 1 13 ]
+"107
+} 0
+"197
+[v _OW_read_byte OW_read_byte `(uc  1 e 1 0 ]
+{
+"199
+[v OW_read_byte@loop loop `uc  1 a 1 25 ]
+[v OW_read_byte@result result `uc  1 a 1 24 ]
+"197
+[v OW_read_byte@TRIS TRIS `*.39uc  1 p 2 16 ]
+[v OW_read_byte@PORT PORT `*.39uc  1 p 2 18 ]
+[v OW_read_byte@LAT LAT `*.39uc  1 p 2 20 ]
+[v OW_read_byte@PIN PIN `uc  1 p 1 22 ]
+"209
+} 0
+"152
+[v _OW_read_bit OW_read_bit `(uc  1 e 1 0 ]
+{
+"154
+[v OW_read_bit@read_data read_data `uc  1 a 1 15 ]
+"152
+[v OW_read_bit@TRIS TRIS `*.39uc  1 p 2 7 ]
+[v OW_read_bit@PORT PORT `*.39uc  1 p 2 9 ]
+[v OW_read_bit@LAT LAT `*.39uc  1 p 2 11 ]
+[v OW_read_bit@PIN PIN `uc  1 p 1 13 ]
+"167
+} 0
+"60
+[v _read_OW read_OW `(uc  1 e 1 0 ]
+{
+"62
+[v read_OW@read_data read_data `uc  1 a 1 6 ]
+"60
+[v read_OW@TRIS TRIS `*.39uc  1 p 2 0 ]
+[v read_OW@PORT PORT `*.39uc  1 p 2 2 ]
+[v read_OW@PIN PIN `uc  1 p 1 4 ]
+"72
+} 0
+"71 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+[v _DHTRESULT DHTRESULT `(v  1 e 1 0 ]
+{
+[v DHTRESULT@port port `uc  1 a 1 wreg ]
+"79
+[v DHTRESULT@j j `i  1 a 2 25 ]
+"71
+[v DHTRESULT@port port `uc  1 a 1 wreg ]
+[v DHTRESULT@tris tris `uc  1 p 1 19 ]
+[v DHTRESULT@conector conector `uc  1 p 1 20 ]
+[v DHTRESULT@TOUT TOUT `uc  1 p 1 21 ]
+[v DHTRESULT@dht dht `*.5uc  1 p 1 22 ]
+[v DHTRESULT@COM COM `*.4uc  1 p 1 23 ]
+"73
+[v DHTRESULT@temp temp `ui  1 s 2 temp ]
+[v DHTRESULT@hum hum `ui  1 s 2 hum ]
+[v DHTRESULT@port port `uc  1 a 1 24 ]
+"101
+} 0
+"9 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_sprintf.c
+[v _sprintf sprintf `(i  1 e 2 0 ]
+{
+[u S1000 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
+"13
+[s S1003 _IO_FILE 10 `S1000 1 . 2 0 `i 1 count 2 2 `[2]uc 1 ungetbuf 2 4 `i 1 ungetcnt 2 6 `i 1 limit 2 8 ]
+[v sprintf@f f `S1003  1 a 10 9 ]
+"12
+[v sprintf@ap ap `[1]*.4v  1 a 1 8 ]
+"9
+[v sprintf@s s `*.39uc  1 p 2 0 ]
+[v sprintf@fmt fmt `*.25DCuc  1 p 2 2 ]
+"23
+} 0
+"1520 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\doprnt.c
+[v _vfprintf vfprintf `(i  1 e 2 0 ]
+{
+[s S1035 _IO_FILE 0 ]
+[v vfprintf@fp fp `*.4S1035  1 a 1 wreg ]
+"1523
+[v vfprintf@cfmt cfmt `*.25uc  1 a 2 72 ]
+"1520
+[v vfprintf@fp fp `*.4S1035  1 a 1 wreg ]
+[v vfprintf@fmt fmt `*.25DCuc  1 p 2 67 ]
+[v vfprintf@ap ap `*.4*.4v  1 p 1 69 ]
+"1525
+"1520
+[v vfprintf@fp fp `*.4S1035  1 a 1 71 ]
+"1543
+} 0
+"1007
+[v _vfpfcnvrt vfpfcnvrt `(v  1 s 1 vfpfcnvrt ]
+{
+[s S1035 _IO_FILE 0 ]
+[v vfpfcnvrt@fp fp `*.4S1035  1 a 1 wreg ]
+[u S1048 . 8 `o 1 ll 8 0 `uo 1 llu 8 0 `*.1v 1 vp 2 0 `d 1 f 4 0 ]
+"1016
+[v vfpfcnvrt@convarg convarg `S1048  1 a 8 56 ]
+"1009
+[v vfpfcnvrt@cp cp `*.25uc  1 a 2 65 ]
+"1007
+[v vfpfcnvrt@fp fp `*.4S1035  1 a 1 wreg ]
+[v vfpfcnvrt@fmt fmt `*.4*.25uc  1 p 1 50 ]
+[v vfpfcnvrt@ap ap `*.4*.4v  1 p 1 51 ]
+"1019
+"1007
+[v vfpfcnvrt@fp fp `*.4S1035  1 a 1 64 ]
+"1517
+} 0
+"894
+[v _utoa utoa `(v  1 s 1 utoa ]
+{
+[s S1035 _IO_FILE 0 ]
+[v utoa@fp fp `*.4S1035  1 a 1 wreg ]
+"897
+[v utoa@n n `uo  1 a 8 40 ]
+"896
+[v utoa@i i `i  1 a 2 48 ]
+[v utoa@p p `i  1 a 2 38 ]
+[v utoa@w w `i  1 a 2 36 ]
+"894
+[v utoa@fp fp `*.4S1035  1 a 1 wreg ]
+[v utoa@d d `uo  1 p 8 26 ]
+"905
+"894
+[v utoa@fp fp `*.4S1035  1 a 1 35 ]
+"926
+} 0
+"133
+[v _pad pad `(v  1 s 1 pad ]
+{
+[s S1035 _IO_FILE 0 ]
+[v pad@fp fp `*.4S1035  1 a 1 wreg ]
+"135
+[v pad@w w `i  1 a 2 21 ]
+[v pad@i i `i  1 a 2 19 ]
+"133
+[v pad@fp fp `*.4S1035  1 a 1 wreg ]
+[v pad@buf buf `*.5uc  1 p 1 15 ]
+[v pad@p p `i  1 p 2 16 ]
+"145
+"133
+[v pad@fp fp `*.4S1035  1 a 1 23 ]
+"164
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputs.c
+[v _fputs fputs `(i  1 e 2 0 ]
+{
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+"11
+[v fputs@i i `i  1 a 2 13 ]
+"10
+[v fputs@c c `uc  1 a 1 12 ]
+"8
+[v fputs@s s `*.5DCuc  1 a 1 wreg ]
+[u S1000 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
+[s S1003 _IO_FILE 10 `S1000 1 . 2 0 `i 1 count 2 2 `[2]uc 1 ungetbuf 2 4 `i 1 ungetcnt 2 6 `i 1 limit 2 8 ]
+[v fputs@fp fp `*.4S1003  1 p 1 8 ]
+"13
+[v fputs@s s `*.5DCuc  1 a 1 11 ]
+"19
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\nf_fputc.c
+[v _fputc fputc `(i  1 e 2 0 ]
+{
+[v fputc@c c `i  1 p 2 0 ]
+[u S1000 . 2 `*.1uc 1 buffer 2 0 `*.1DCuc 1 source 2 0 ]
+[s S1003 _IO_FILE 10 `S1000 1 . 2 0 `i 1 count 2 2 `[2]uc 1 ungetbuf 2 4 `i 1 ungetcnt 2 6 `i 1 limit 2 8 ]
+[v fputc@fp fp `*.4S1003  1 p 1 2 ]
+"24
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\putch.c
+[v _putch putch `(v  1 e 1 0 ]
+{
+"9
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lomod.c
+[v ___lomod __lomod `(uo  1 e 8 0 ]
+{
+"12
+[v ___lomod@counter counter `uc  1 a 1 17 ]
+"7
+[v ___lomod@divisor divisor `uo  1 p 8 0 ]
+[v ___lomod@dividend dividend `uo  1 p 8 8 ]
+"27
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.40\pic\sources\c99\common\lodiv.c
+[v ___lodiv __lodiv `(uo  1 e 8 0 ]
+{
+"12
+[v ___lodiv@quotient quotient `uo  1 a 8 17 ]
+"13
+[v ___lodiv@counter counter `uc  1 a 1 25 ]
+"7
+[v ___lodiv@divisor divisor `uo  1 p 8 0 ]
+[v ___lodiv@dividend dividend `uo  1 p 8 8 ]
+"32
+} 0
+"90 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\Sensores.c
+[v _DHT22READ DHT22READ `(v  1 e 1 0 ]
+{
+[v DHT22READ@port port `uc  1 a 1 wreg ]
+[v DHT22READ@port port `uc  1 a 1 wreg ]
+[v DHT22READ@tris tris `uc  1 p 1 6 ]
+[v DHT22READ@entry entry `uc  1 p 1 7 ]
+[v DHT22READ@TOUT TOUT `uc  1 p 1 8 ]
+[v DHT22READ@dhtresult dhtresult `*.5uc  1 p 1 9 ]
+[v DHT22READ@COM COM `*.4uc  1 p 1 10 ]
+"92
+[v DHT22READ@check check `uc  1 s 1 check ]
+[v DHT22READ@port port `uc  1 a 1 11 ]
+"107
+} 0
+"13
+[v _start_signal start_signal `(v  1 e 1 0 ]
+{
+[v start_signal@port port `uc  1 a 1 wreg ]
+[v start_signal@port port `uc  1 a 1 wreg ]
+[v start_signal@tris tris `uc  1 p 1 0 ]
+"15
+[v start_signal@port port `uc  1 a 1 2 ]
+"28
+} 0
+"64
+[v _read_byte read_byte `(uc  1 e 1 0 ]
+{
+[v read_byte@port port `uc  1 a 1 wreg ]
+"65
+[v read_byte@i i `uc  1 a 1 5 ]
+[v read_byte@num num `uc  1 a 1 3 ]
+"64
+[v read_byte@port port `uc  1 a 1 wreg ]
+[v read_byte@tris tris `uc  1 p 1 0 ]
+[v read_byte@port port `uc  1 a 1 4 ]
+"89
+} 0
+"29
+[v _check_response check_response `(uc  1 e 1 0 ]
+{
+[v check_response@port port `uc  1 a 1 wreg ]
+[v check_response@port port `uc  1 a 1 wreg ]
+[v check_response@tris tris `uc  1 p 1 0 ]
+[v check_response@TOUT TOUT `uc  1 p 1 1 ]
+"31
+[v check_response@port port `uc  1 a 1 2 ]
+"63
+} 0
+"730 C:\Users\javie\OneDrive - Pontificia Universidad Javeriana\TG\MPLAB\MPLAB\PG\PG.X\main.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"734
+[v INTERRUPT_InterruptManager@i2cstep i2cstep `uc  1 s 1 i2cstep ]
+"735
+[v INTERRUPT_InterruptManager@rp rp `uc  1 s 1 rp ]
+[v INTERRUPT_InterruptManager@h h `uc  1 s 1 h ]
+[v INTERRUPT_InterruptManager@sspo sspo `uc  1 s 1 sspo ]
+"915
+} 0
+"189
+[v _i2cwritebyte i2cwritebyte `(v  1 e 1 0 ]
+{
+[v i2cwritebyte@add add `uc  1 a 1 wreg ]
+[v i2cwritebyte@add add `uc  1 a 1 wreg ]
+[v i2cwritebyte@dir dir `uc  1 p 1 0 ]
+[v i2cwritebyte@data data `uc  1 p 1 1 ]
+"190
+[v i2cwritebyte@si3 si3 `uc  1 s 1 si3 ]
+"189
+[v i2cwritebyte@add add `uc  1 a 1 4 ]
+"215
+} 0
+"155
+[v _i2cwrite2byte i2cwrite2byte `(v  1 e 1 0 ]
+{
+[v i2cwrite2byte@add add `uc  1 a 1 wreg ]
+[v i2cwrite2byte@add add `uc  1 a 1 wreg ]
+[v i2cwrite2byte@dir dir `uc  1 p 1 0 ]
+[v i2cwrite2byte@data data `ui  1 p 2 1 ]
+"156
+[v i2cwrite2byte@si3 si3 `uc  1 s 1 si3 ]
+"155
+[v i2cwrite2byte@add add `uc  1 a 1 5 ]
+"185
+} 0
+"217
+[v _i2creadbyte i2creadbyte `(ui  1 e 2 0 ]
+{
+[v i2creadbyte@add add `uc  1 a 1 wreg ]
+[v i2creadbyte@add add `uc  1 a 1 wreg ]
+[v i2creadbyte@dir dir `uc  1 p 1 0 ]
+[v i2creadbyte@value value `*.4ui  1 p 1 1 ]
+"218
+[v i2creadbyte@si2 si2 `uc  1 s 1 si2 ]
+"217
+[v i2creadbyte@add add `uc  1 a 1 5 ]
+"266
+} 0
+"268
+[v _i2cread3byte i2cread3byte `(ul  1 e 4 0 ]
+{
+[v i2cread3byte@add add `uc  1 a 1 wreg ]
+[v i2cread3byte@add add `uc  1 a 1 wreg ]
+[v i2cread3byte@dir dir `uc  1 p 1 0 ]
+[v i2cread3byte@value value `*.5ul  1 p 1 1 ]
+"269
+[v i2cread3byte@si2 si2 `uc  1 s 1 si2 ]
+"268
+[v i2cread3byte@add add `uc  1 a 1 9 ]
+"323
+} 0
+"714
+[v _TXsend TXsend `(v  1 e 1 0 ]
+{
+[v TXsend@word word `*.39uc  1 p 2 0 ]
+[v TXsend@size size `uc  1 p 1 2 ]
+"715
+[v TXsend@i i `uc  1 s 1 i ]
+"728
+} 0
